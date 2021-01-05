@@ -2,7 +2,7 @@
     include_once("inc/doctype.php");
     include_once("inc/header.php");
 ?>
-    <h1>Hola mundo</h1>
+    <h1>Hola mundo, hola mundo</h1>
     <section class="main">
         <div class="portada">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
