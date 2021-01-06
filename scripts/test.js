@@ -21,6 +21,12 @@ $(document).ready(function(){
         }
     ];
 
+    function showContent(){
+        $('#loader').fadeOut(1000);
+        $('#principal').hide();
+        $('#principal').fadeIn(2000);
+    }
+
     function fillContainer(fillAnswers){
         let boxContainer = document.getElementById('questionContainer');
         for (let i = 0; i < fillAnswers.length; i++){
@@ -57,6 +63,6 @@ $(document).ready(function(){
             $(`#${buttonAnswer.id}`).fadeIn(250);
         });
     }
-
+    showContent();
     fillContainer(answer);
 });

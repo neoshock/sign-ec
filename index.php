@@ -16,7 +16,7 @@
                             <div class="col-md-5 titulos" style="text-align: start;">
                               <h2 class="mb-2 text-body fs-1 position-relative">APRENDE LENGUAJE DE SEÑAS</h2>
                               <p class="text-muted mt-3 contenido fs-4 position-relative">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                              <a href="learns.html" class="btn btn-info fs-3 text-light">Quiero Aprender</a>
+                              <a href="learns.php" class="btn btn-info fs-3 text-light">Quiero Aprender</a>
                             </div>
                         </div>
                     </div>

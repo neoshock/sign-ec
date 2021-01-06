@@ -1,17 +1,5 @@
 <?php include_once "inc/doctype.php"; ?>
 <?php include_once "inc/header.php"; ?>
-<?php 
-
-    echo count($_GET);
-    for ($i=0; $i < count($_GET); $i++) { 
-        echo $_GET["nombre"];
-    }
-
-    echo "<script>
-        console.log(" . json_encode($_GET) .  ");
-    </script>";
-
-?>
     <div class="container">
         <div class="row bg-light rounded w-75 mx-auto p-3" style="margin: 30px 0px;">
             <div class="col-md-12">
