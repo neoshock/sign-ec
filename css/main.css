@@ -9,6 +9,16 @@
     margin: auto;
 }
 
+.container-error {
+    border: 6px solid rgb(255, 101, 101);
+    transition: border 0.1s;
+}
+
+.container-success {
+    border: 6px solid rgb(106, 255, 101);
+    transition: border 0.1s;
+}
+
 .loader-container .loader-primary {
     position: absolute;
     top: 50%;

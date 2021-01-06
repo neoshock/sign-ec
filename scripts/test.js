@@ -1,6 +1,10 @@
 $(document).ready(function(){
+    var nextButton = document.getElementById('next');
+    var audioError = document.createElement('audio');
+    var audioSuccess = document.createElement('audio');
 
-    var respuestaCorrecta = "Hola que tal";
+    audioError.setAttribute("src", "files/sounds/REV-Chiptune FX 07.wav");
+    audioSuccess.setAttribute("src", "files/sounds/REV-Chiptune FX 08.wav");
 
     var answer = [
         {
@@ -20,6 +24,40 @@ $(document).ready(function(){
             respuesta : "Como estas"
         }
     ];
+
+    var correctAnswer = answer[0].respuesta + answer[1].respuesta;
+
+    function answerError(){
+        let cotnainer = document.getElementById('container');
+        cotnainer.classList.add("container-error");
+        audioError.play();
+        setTimeout(() => {
+            cotnainer.classList.remove("container-error");
+        }, 1000);
+    }
+
+    function answerCorrect(){
+        let cotnainer = document.getElementById('container');
+        cotnainer.classList.add("container-success");
+        audioSuccess.play();
+        setTimeout(() => {
+            cotnainer.classList.remove("container-success");
+        }, 1000);
+    }
+
+    function comprobarAnswer(){
+        let respuesta = "";
+        let boxAnswer = document.getElementById('boxAnswer');
+        let buttons = boxAnswer.getElementsByTagName('button');
+        for (let i = 0; i< buttons.length; i++){
+            respuesta = respuesta + buttons[i].innerHTML;
+        }
+        if(respuesta == correctAnswer){
+            answerCorrect();
+        }else{
+            answerError();
+        }
+    }
 
     function showContent(){
         $('#loader').fadeOut(1000);
@@ -63,6 +101,7 @@ $(document).ready(function(){
             $(`#${buttonAnswer.id}`).fadeIn(250);
         });
     }
+    nextButton.addEventListener('click', comprobarAnswer);
     showContent();
     fillContainer(answer);
 });
