@@ -1,4 +1,5 @@
 
+// cambiar la clase por una funtion
 class ImageFlipBoxes 
 {
     constructor(config) 
@@ -26,7 +27,6 @@ class ImageFlipBoxes
         html += '            <p>'+ this.frontDescription +'</p>';
         html += '        </div>';
         html += '    </div>';
-
         html += '    <div class="back">';
         html += '        <div class="box2 box-'+ this.box_color +'">';
         html += '            <h4>'+ this.backTitle +'</h4>';
@@ -41,22 +41,15 @@ class ImageFlipBoxes
     }
 }
 
-ifb = new ImageFlipBoxes({
-    box_color: "warning",
-    image: "files/covers/1.png",
-    front: 
-    {
-        title: "Felicia Doe",
-        description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
-    },
-    back:
-    {
-        title: "Felicia Doe",
-        description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
-    }
+$.ajax({
+    url: "json/config.sections.json",
+    dataType: 'json',
+    async: false
+}).done(function(data){
+    $.each(data, function(index){
+        $("#learn").append(new ImageFlipBoxes(data[index]).build());
+    });
 });
-
-$("#learn").html(ifb.build());
 
 /** Flip Boxes
  *********************** **/
