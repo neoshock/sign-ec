@@ -1,9 +1,36 @@
+var boxes = [
+    {   box_color: "warning",
+        image: "files/covers/1.png",
+        front: 
+        {
+            title: "Felicia Doe",
+            description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        },
+        back:
+        {
+        title: "Felicia Doe",
+        description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        }
+    },
+    {   box_color: "warning",
+        image: "files/covers/1.png",
+        front: 
+        {
+            title: "Felicia Doe",
+            description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        },
+        back:
+        {
+            title: "Felicia Doe",
+            description: "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        }
+    }
+];
 
 class ImageFlipBoxes 
 {
     constructor(config) 
     {
-        console.log(typeof config);
         this.box_color = config.box_color;
         this.image = config.image;
         this.frontTitle = config.front.title;
@@ -11,6 +38,8 @@ class ImageFlipBoxes
         this.backTitle = config.back.title;
         this.backDescription = config.back.description;
     }
+
+
 
     build()
     {
@@ -38,6 +67,12 @@ class ImageFlipBoxes
         html += '</div>';
 
         return html;
+    }
+
+    newBuild(div_htlm){
+        for(let i = 0; i< boxes.length; i++){
+            let div_father = document.createElement('div');
+        }
     }
 }
 

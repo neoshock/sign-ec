@@ -21,7 +21,6 @@
                         </div>
                     </div>
                   </div>
-                  <h2>Hola gente inculta</h2>
                   <div class="carousel-item">
                     <img src="files/background/bg-2.png" class="d-block" style="width: 100%; height: 100%;" alt="background">
                     <div class="carousel-caption position-absolute w-100" style="top: 18%; left: 12%;">
