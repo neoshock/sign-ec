@@ -27,11 +27,6 @@ class Main
   }
 }
 
-function convertArrayToJson($array)
-{
-  echo "<script>console.log(". json_encode($array) .")</script>";
-}
-
 if (isset($_GET) && !empty($_GET)) {
   if ($page= (isset($_GET["page"]) && !empty($_GET["page"])) ? $_GET["page"] : "") {
     // busca la pagina y retorna la config del mismo
@@ -41,3 +36,7 @@ if (isset($_GET) && !empty($_GET)) {
 {
   include_once "principal.php";
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c03423729f6c265812fe47d9edfc594149bb9bd8

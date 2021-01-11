@@ -1,0 +1,44 @@
+[
+    {
+        "box_color": "warning",
+        "image": "view/images/lds-numero.png",
+        "front": 
+        {
+            "title": "Números",
+            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        },
+        "back":
+        {
+            "title": "Números",
+            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        }
+    },
+    {
+        "box_color": "warning",
+        "image": "view/images/lds-abecedario.png",
+        "front": 
+        {
+            "title": "Abecedario",
+            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        },
+        "back":
+        {
+            "title": "Abecedario",
+            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        }
+    },
+    {
+        "box_color": "warning",
+        "image": "view/images/lds-amarillo.png",
+        "front": 
+        {
+            "title": "Colores",
+            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        },
+        "back":
+        {
+            "title": "Colores",
+            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+        }
+    }
+]
