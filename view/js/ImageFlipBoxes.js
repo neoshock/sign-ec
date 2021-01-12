@@ -27,8 +27,7 @@ var boxes = [
     }
 ];
 
-// cambiar la clase por una funtion
-class ImageFlipBoxes 
+function buildImageFlipBoxes(urlJson)
 {
     constructor(config) 
     {
@@ -76,15 +75,7 @@ class ImageFlipBoxes
     }
 }
 
-$.ajax({
-    url: "json/config.sections.json",
-    dataType: 'json',
-    async: false
-}).done(function(data){
-    $.each(data, function(index){
-        $("#learn").append(new ImageFlipBoxes(data[index]).build());
-    });
-});
+$("#myContent").html("").append(buildImageFlipBoxes("json/config.sections.json"));
 
 /** Flip Boxes
  *********************** **/
