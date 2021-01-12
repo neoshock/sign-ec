@@ -1,9 +1,9 @@
 .test-1 {
-    display: none;
+    display: block;
 }
 
 .test-2 {
-    display: block;
+    display: none;
 }
 
 .loader-container {
