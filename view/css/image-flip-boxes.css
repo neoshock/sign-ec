@@ -474,3 +474,11 @@ img.img-responsive {
 div.row>div img.img-responsive {
 	width: 100%;
 }
+
+
+.pt-100 { padding-top: 100px }
+
+.list-group li:hover {
+	background-color: lightgray;
+	cursor: pointer;
+}

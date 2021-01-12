@@ -52,7 +52,7 @@
     
     <section>
       <div class="container">
-        <div class="row" id="learn">
+        <div class="row" id="myContent">
         
         </div>
       </div>

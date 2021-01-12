@@ -5,12 +5,22 @@ $(document).ready(function()
         var page = $(this).attr("href");
         $.get("index.php", { "page": page }, function(response){
             console.log(response);
-            $(".main").html("");
+            $(".main").css("display","none");
 
-            if (response.result)
-            {
-                $.getScript(response.action.script); // colocar la ruta de la config
+            if (response.result) {
+                
+                if (response.action.view)
+                {
+                    $.ajax({
+                        url: response.action.view,
+                        dataType: "html"
+                    }).done(function(data){
+                        $("#myContent").html(data);        
+                    });
+                }
+                $.getScript(response.action.script);
             }
+
         }, "json");
     });
 });

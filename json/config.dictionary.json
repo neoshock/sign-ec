@@ -1,0 +1,20 @@
+[
+    {
+        "word": "Uno",
+        "image": "view/images/numeros/uno.png",
+        "video": "https://youtu.be/FF5JlbTsiqw",
+        "description": "Como hacer los movimientos de las manos"
+    },
+    {
+        "word": "Dos",
+        "image": "view/images/numeros/dos.png",
+        "video": "https://youtu.be/8CJ1b9A5v8w",
+        "description": "Como hacer los movimientos de las manos"
+    },
+    {
+        "word": "Tres",
+        "image": "view/images/numeros/tres.png",
+        "video": "https://youtu.be/-YB8--WTls8",
+        "description": "Como hacer los movimientos de las manos"
+    }
+]
