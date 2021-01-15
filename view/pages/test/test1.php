@@ -1,5 +1,5 @@
 <section class="test" id="test">
-    <div class="container bg-light h-100 border rounded">
+    <div class="container bg-light border rounded">
         <div class="row justify-content-center">
             <div class="col-md-12" id="progress">
                 <div class="progress w-75 mx-auto">
@@ -41,6 +41,26 @@
                             <input type="radio" class="btn-check" id="numero-1">
                             <label class="btn w-100" for="numero-1">Numero uno</label>
                         </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="test-3 w-100">
+                    <h5 class="fs-2 m-3 text-secondary text-center">Seleccione la frase correcta</h5>
+                    <div class="w-100">
+                        <div class="img-content w-50 d-flex">
+                            <img class="img-word" src="view/images/saludos/hola.png" alt="">
+                            <img class="img-word" src="view/images/saludos/que tal.png" alt="">
+                        </div>
+                    </div>
+                    <div class="word-content rounded">
+                        <button class="btn btn-colors" value="hola">Hola</button>
+                        <button class="btn btn-colors" value="como-estas">como estas</button>
+                    </div>
+                    <div class="words mx-auto w-50">
+                        <button class="btn btn-colors" value="hola">Hola</button>
+                        <button class="btn btn-colors" value="como-estas">como estas</button>
+                        <button class="btn btn-colors" value="que-tal">que tal</button>
+                        <button class="btn btn-colors" value="como-te-sientes">como te sientes</button>
                     </div>
                 </div> -->
 

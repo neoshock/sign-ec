@@ -1,8 +1,7 @@
 
 class MainTest {
 
-    testOne;
-    testTwo;
+    theTestContent;
     correctAnswer;
     progress = document.getElementById('progress-bar');
     currentProgress = 0;
@@ -13,9 +12,11 @@ class MainTest {
 
     loadTest(config) {
         if (config.typeTest == "img-select"){
-            this.testOne = this.generateContentOne(config);
+            this.theTestContent = this.generateContentOne(config);
         }else if(config.typeTest == "select-answer"){
-            this.testTwo = this.generateContentTwo(config);
+            this.theTestContent = this.generateContentTwo(config);
+        }else if(config.typeTest == "words-select"){
+            this.theTestContent = this.generateContentThree(config);
         }
     }
 
@@ -63,7 +64,7 @@ class MainTest {
         divSonTwo.classList.add('col-md-4');
         divSonTwo.classList.add('align-self-center');
 
-        let imgContent = `<img class="w-75" src="view/images/numeros/dos.png" alt="">`;
+        let imgContent = `<img class="w-75" src="${testTwo.fileImg}" alt="">`;
         divSonTwo.innerHTML = imgContent;
         divParent.appendChild(divSonTwo);
 
@@ -82,6 +83,66 @@ class MainTest {
         divParent.appendChild(divSonOnThre);
 
         this.correctAnswer = testTwo.answer;
+
+        return divParent;
+    }
+
+    generateContentThree(testThree){
+        let divParent = document.createElement('div');
+        let divSonOne = document.createElement('div');
+        let divSonTwo = document.createElement('div');
+        let divSonOnThre = document.createElement('div');
+
+        let contentTitle = `<h5 class="fs-2 m-3 text-secondary text-center">${testThree.titleTest}</h5>`;
+
+        divParent.classList.add('test-3');
+        divParent.classList.add('w-100');
+        divParent.innerHTML = contentTitle;
+
+        divSonOne.classList.add('w-100');
+        let divSonOneChildren = document.createElement('div');
+
+        divSonOneChildren.classList.add('img-content');
+        divSonOneChildren.classList.add('w-50');
+        divSonOneChildren.classList.add('d-flex');
+
+        for (let i =0; i< testThree.fileImgs.length; i++){
+            let imgWord = `<img class="img-word" src="${testThree.fileImgs[i].file}" alt="${testThree.fileImgs[i].name}">`;
+            divSonOneChildren.innerHTML += imgWord;
+        }
+
+        divSonOne.appendChild(divSonOneChildren);
+        divParent.appendChild(divSonOne);
+
+        divSonTwo.classList.add('word-content');
+        divSonTwo.classList.add('rounded');
+
+        divParent.appendChild(divSonTwo);
+
+
+        divSonOnThre.classList.add('words');
+        divSonOnThre.classList.add('mx-auto');
+        divSonOnThre.classList.add('w-50');
+        divSonOnThre.setAttribute('id','word-box');
+
+        for(let i =0; i< testThree.wordOptions.length; i++){
+            let color = randonColors();
+            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}" style="${color};">${testThree.wordOptions[i].name}</button>`;
+            divSonOnThre.innerHTML += buttonWord;
+        }
+
+        divParent.appendChild(divSonOnThre);
+
+        this.correctAnswer = testThree.answer;
+
+        function randonColors(){
+            let colorOne,colorTwo,colorThree;
+            colorOne = Math.floor(Math.random()*255);
+            colorTwo = Math.floor(Math.random()*255);
+            colorThree = Math.floor(Math.random()*255);
+            let rgb = `border: 3px solid rgb(${colorOne},${colorTwo},${colorThree})`;
+            return rgb;
+        }
 
         return divParent;
     }
@@ -153,6 +214,7 @@ $('#test').ready(function(){
         typeTest: "select-answer",
         answer: "num-2",
         titleTest: "Seleccione la respuesta correcta",
+        fileImg: "view/images/numeros/dos.png",
         options: [{
             title: "Numero dos",
             name: "numero-2",
@@ -176,12 +238,47 @@ $('#test').ready(function(){
         ]
     }
 
+    var configThree = {
+        typeTest: "words-select",
+        answer: "hola que-tal",
+        titleTest: "Seleccione la frase correcta",
+        fileImgs: [{
+                name: "hola",
+                file: "view/images/saludos/hola.png"
+            },
+            {
+                name: "que-tal",
+                file: "view/images/saludos/que tal.png"
+            }],
+        wordOptions: [{
+            title: "hola",
+            name: "Hola",
+            value: "hola"
+        },
+        {
+            title: "como estas",
+            name: "como estas",
+            value: "como-estas"
+        },
+        {
+            title: "que tal",
+            name: "que tal",
+            value: "que-tal"
+        },
+        {
+            title: "como te sientes",
+            name: "como te sientes",
+            value: "como-te-sientes"
+        }
+        ]
+    }
+
     const mainTest = new MainTest("hola gente");
     const testContent = document.getElementById('testContent');
     var onAnswer = "";
 
-    mainTest.loadTest(configTwo);
-    testContent.appendChild(mainTest.testTwo);
+    mainTest.loadTest(configThree);
+    testContent.appendChild(mainTest.theTestContent);
 
     var boxContent = document.getElementById('box-images');
     var optionsContent = document.getElementById('box-options');

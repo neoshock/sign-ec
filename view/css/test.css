@@ -1,6 +1,6 @@
 .test {
     padding: 20px 0px;
-    height: 640px;
+    height: auto;
 }
 
 .test .container {
@@ -20,7 +20,7 @@
 }
 
 #testContent {
-    height: 420px;
+    height: auto;
 }
 
 .buttons .btn{
@@ -155,6 +155,41 @@
 .test-2 .check-answer .btn:hover {
     border: 2px solid rgb(121, 228, 255);
     border-radius: 9px;
+}
+
+.test-3 .img-content {
+    margin: 15px auto;
+}
+
+.test-3 .img-content .img-word {
+    width: 35%;
+    margin: 0px auto;
+    border: 3px solid rgb(108, 189, 70);
+    border-radius: 15px;
+}
+
+.test-3 .word-content {
+    width: 60%;
+    margin: 12px auto;
+    padding: 6px;
+    height: 120px;
+    border: 3px solid rgb(108, 189, 70);
+}
+
+.test-3 .word-content .btn {
+    margin: 0px 6px;
+}
+
+
+.test-3 .words .btn {
+    border: 3px solid #56e2ac;
+    margin: 15px 18px;
+    padding: 9px;
+    font-size: 18px;
+}
+
+.test-3 .words .btn-colors {
+    margin: 15px 18px;
 }
 
 
