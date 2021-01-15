@@ -138,9 +138,25 @@
     background-color: #8bf5cc;
 }
 
-.test-2 {
-    display: none;
+.test-2 .check-answer {
+    margin: 21px auto;
 }
+
+.test-2 img {
+    border: 2px solid rgb(28, 180, 218);
+    border-radius: 15px;    
+}
+
+.test-2 .check-answer .btn {
+    border: 2px solid rgb(28, 180, 218);
+    border-radius: 9px;
+}
+
+.test-2 .check-answer .btn:hover {
+    border: 2px solid rgb(121, 228, 255);
+    border-radius: 9px;
+}
+
 
 @keyframes loader-primary {
     0% {
