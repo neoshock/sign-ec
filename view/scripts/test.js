@@ -1,159 +1,312 @@
-$(document).ready(function(){
-    var img_select;
-    var nextButton = document.getElementById('next');
-    var audioError = document.createElement('audio');
-    var audioSuccess = document.createElement('audio');
 
-    audioError.setAttribute("src", "files/sounds/REV-Chiptune FX 07.wav");
-    audioSuccess.setAttribute("src", "files/sounds/REV-Chiptune FX 08.wav");
+class MainTest {
 
-    var questionImg = [
-        {
-            id: 'numero-1',
-            image_file: 'files/tests/numeros/uno.png',
-            respuesta: 'numero-1'
-        },
-        {
-            id: 'numero-2',
-            image_file: 'files/tests/numeros/dos.png',
-            respuesta: 'numero-2'
-        },
-        {
-            id: 'numero-3',
-            image_file: 'files/tests/numeros/tres.png',
-            respuesta: 'numero-3'
-        },
-        {
-            id: 'numero-4',
-            image_file: 'files/tests/numeros/cuatro.png',
-            respuesta: 'numero-4'
-        }
-    ];
+    theTestContent;
+    correctAnswer;
+    progress = document.getElementById('progress-bar');
+    currentProgress = 0;
 
-    var answer = [
-        {
-            id : "hola",
-            respuesta : "Hola"
-        },
-        {
-            id : "que-tal",
-            respuesta : "Que tal"
-        },
-        {
-            id : "como-te-sientes",
-            respuesta : "Como te sientes"
-        },
-        {
-            id : "como-estas",
-            respuesta : "Como estas"
-        }
-    ];
+    constructor (test){
+        console.log(test);
+    }
 
-    var correctAnswer = answer[0].respuesta + answer[1].respuesta;
-
-    function fill_images(){
-        let box_answer = document.getElementById('box-images');
-        let image_button = [];
-        for (let i = 0; i < questionImg.length; i++){
-            image_button[i] = document.createElement('img');
-            image_button[i].classList.add('question-img');
-            image_button[i].setAttribute("alt",questionImg[i].respuesta);
-            image_button[i].setAttribute("id",questionImg[i].id);
-            image_button[i].setAttribute('src',questionImg[i].image_file);
-            box_answer.appendChild(image_button[i]);
-            image_button[i].addEventListener('click', ()=>{
-                let index = i;
-                img_select = image_button[i];
-                console.log(img_select);
-                addClassRemove(image_button, index);
-            });
+    loadTest(config) {
+        if (config.typeTest == "img-select"){
+            this.theTestContent = this.generateContentOne(config);
+        }else if(config.typeTest == "select-answer"){
+            this.theTestContent = this.generateContentTwo(config);
+        }else if(config.typeTest == "words-select"){
+            this.theTestContent = this.generateContentThree(config);
         }
     }
 
-    function addClassRemove(images_btn, index){
-        for (let i = 0; i< images_btn.length; i++){
-            images_btn[i].classList.remove('image-selected');
+    generateContentOne(testOne){
+        let divParent = document.createElement('div');
+        let contentTitle = `<h5 class="fs-2 m-3 text-secondary text-center">${testOne.titleTest}</h5>`;
+        let divChildren = document.createElement('div');
+        
+        this.correctAnswer = testOne.answer;
+
+        divParent.classList.add('test-1');
+        divParent.classList.add('w-100');
+        divChildren.classList.add('images');
+        divChildren.classList.add('w-100');
+        divChildren.classList.add('d-flex');
+
+        divChildren.setAttribute('id','box-images');
+
+        divParent.innerHTML = contentTitle;
+        divParent.appendChild(divChildren);
+
+        for(let i =0; i< testOne.images.length; i++){
+            let imgInput = `<input class="img" type="image" id="${testOne.images[i].name}" value="${testOne.images[i].value}" src="${testOne.images[i].file}">`;
+            divChildren.innerHTML += imgInput;
         }
-        images_btn[index].classList.add('image-selected');
+        return divParent;
     }
 
-    function answerError(){
-        let cotnainer = document.getElementById('container');
-        cotnainer.classList.add("container-error");
-        audioError.play();
-        setTimeout(() => {
-            cotnainer.classList.remove("container-error");
-        }, 1000);
-    }
+    generateContentTwo(testTwo){
+        let divParent = document.createElement('div');
+        let divSonOne = document.createElement('div');
+        let divSonTwo = document.createElement('div');
+        let divSonOnThre = document.createElement('div');
 
-    function answerCorrect(){
-        let cotnainer = document.getElementById('container');
-        cotnainer.classList.add("container-success");
-        audioSuccess.play();
-        setTimeout(() => {
-            cotnainer.classList.remove("container-success");
-        }, 1000);
-    }
+        let contentTitle = `<h5 class="fs-2 m-3 text-secondary text-center">${testTwo.titleTest}</h5>`;
 
-    function comprobarAnswer(){
-        let respuesta = "";
-        let boxAnswer = document.getElementById('boxAnswer');
-        let buttons = boxAnswer.getElementsByTagName('button');
-        for (let i = 0; i< buttons.length; i++){
-            respuesta = respuesta + buttons[i].innerHTML;
+        divParent.classList.add('test-2');
+        divParent.classList.add('row');
+        divParent.classList.add('justify-content-center');
+
+        divSonOne.classList.add('col-md-12');
+        divSonOne.innerHTML = contentTitle;
+        divParent.appendChild(divSonOne);
+
+        divSonTwo.classList.add('col-md-4');
+        divSonTwo.classList.add('align-self-center');
+
+        let imgContent = `<img class="w-75" src="${testTwo.fileImg}" alt="">`;
+        divSonTwo.innerHTML = imgContent;
+        divParent.appendChild(divSonTwo);
+
+        divSonOnThre.classList.add('col-md-4');
+        divSonOnThre.classList.add('align-self-center');
+        divSonOnThre.setAttribute('id','box-options');
+
+        for(let i=0; i< testTwo.options.length; i++){
+            let checkImput = `<div class="w-100 check-answer form-check">
+                <input type="radio" value="${testTwo.options[i].value}" class="btn-check" id="${testTwo.options[i].name}">
+                <label class="btn w-100" for="${testTwo.options[i].name}">${testTwo.options[i].title}</label>
+            </div>`;
+            divSonOnThre.innerHTML += checkImput;
         }
 
-        if (correctAnswer == respuesta){
-            answerCorrect();
+        divParent.appendChild(divSonOnThre);
+
+        this.correctAnswer = testTwo.answer;
+
+        return divParent;
+    }
+
+    generateContentThree(testThree){
+        let divParent = document.createElement('div');
+        let divSonOne = document.createElement('div');
+        let divSonTwo = document.createElement('div');
+        let divSonOnThre = document.createElement('div');
+
+        let contentTitle = `<h5 class="fs-2 m-3 text-secondary text-center">${testThree.titleTest}</h5>`;
+
+        divParent.classList.add('test-3');
+        divParent.classList.add('w-100');
+        divParent.innerHTML = contentTitle;
+
+        divSonOne.classList.add('w-100');
+        let divSonOneChildren = document.createElement('div');
+
+        divSonOneChildren.classList.add('img-content');
+        divSonOneChildren.classList.add('w-50');
+        divSonOneChildren.classList.add('d-flex');
+
+        for (let i =0; i< testThree.fileImgs.length; i++){
+            let imgWord = `<img class="img-word" src="${testThree.fileImgs[i].file}" alt="${testThree.fileImgs[i].name}">`;
+            divSonOneChildren.innerHTML += imgWord;
+        }
+
+        divSonOne.appendChild(divSonOneChildren);
+        divParent.appendChild(divSonOne);
+
+        divSonTwo.classList.add('word-content');
+        divSonTwo.classList.add('rounded');
+
+        divParent.appendChild(divSonTwo);
+
+
+        divSonOnThre.classList.add('words');
+        divSonOnThre.classList.add('mx-auto');
+        divSonOnThre.classList.add('w-50');
+        divSonOnThre.setAttribute('id','word-box');
+
+        for(let i =0; i< testThree.wordOptions.length; i++){
+            let color = randonColors();
+            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}" style="${color};">${testThree.wordOptions[i].name}</button>`;
+            divSonOnThre.innerHTML += buttonWord;
+        }
+
+        divParent.appendChild(divSonOnThre);
+
+        this.correctAnswer = testThree.answer;
+
+        function randonColors(){
+            let colorOne,colorTwo,colorThree;
+            colorOne = Math.floor(Math.random()*255);
+            colorTwo = Math.floor(Math.random()*255);
+            colorThree = Math.floor(Math.random()*255);
+            let rgb = `border: 3px solid rgb(${colorOne},${colorTwo},${colorThree})`;
+            return rgb;
+        }
+
+        return divParent;
+    }
+
+    checkAnswer(correct, present){
+        if(correct == present){
+            this.audioEvent("correct");
+            $("#test .container").addClass("correct-answer");
+            setTimeout(() => {
+                $("#test .container").removeClass("correct-answer");
+            }, 500);
+            this.currentProgress += 20;
+            this.progress.toggleAttribute('aria-valuenow',`${this.currentProgress}`);
+            this.progress.style.width = `${this.currentProgress}%`;
         }else{
-            answerError();
+            this.audioEvent("incorrect");
+            $("#test .container").addClass("incorrect-answer");
+            setTimeout(() => {
+                $("#test .container").removeClass("incorrect-answer");
+            }, 500);
         }
     }
 
-    function showContent(){
-        $('#loader').fadeOut(1000);
-        $('#principal').hide();
-        $('#principal').fadeIn(2000);
+    audioEvent(current){
+        var audioElement = document.createElement('audio');
+        if(current == "correct"){
+            audioElement.setAttribute("src","files/sounds/REV-Chiptune FX 08.wav");
+        }else{
+            audioElement.setAttribute("src","files/sounds/REV-Chiptune FX 07.wav");
+        }
+        audioElement.play();
     }
 
-    function fillContainer(fillAnswers){
-        let boxContainer = document.getElementById('questionContainer');
-        for (let i = 0; i < fillAnswers.length; i++){
-            let button = document.createElement('button');
-            button.classList.add('btn');
-            button.classList.add('w-25');
-            button.classList.add('m-1');
-            button.classList.add('btn-outline-secondary');
-            button.setAttribute("value",fillAnswers[i].respuesta);
-            button.setAttribute("id",fillAnswers[i].id);
-            button.innerHTML = fillAnswers[i].respuesta;
-            boxContainer.appendChild(button);
-            button.addEventListener('click', ()=>{
-                $(`#${button.id}`).fadeOut(250);
-                colocarBox(button);
+}
+
+class TestOne {
+
+}
+
+$('#test').ready(function(){
+    var config = {
+        typeTest: "img-select",
+        answer: "img-2",
+        titleTest: "Cual de lo siguientes es 2",
+        images: [{
+            name: "numero-2",
+            value: "img-2",
+            file: "view/images/numeros/dos.png"
+        },
+        {
+            name: "numero-4",
+            value: "img-4",
+            file: "view/images/numeros/cuatro.png"
+        },
+        {
+            name: "numero-1",
+            value: "img-1",
+            file: "view/images/numeros/uno.png"
+        },
+        {
+            name: "numero-3",
+            value: "img-3",
+            file: "view/images/numeros/tres.png"
+        }
+        ]
+    }
+
+    var configTwo = {
+        typeTest: "select-answer",
+        answer: "num-2",
+        titleTest: "Seleccione la respuesta correcta",
+        fileImg: "view/images/numeros/dos.png",
+        options: [{
+            title: "Numero dos",
+            name: "numero-2",
+            value: "num-2"
+        },
+        {
+            title: "Numero cuatro",
+            name: "numero-4",
+            value: "num-4"
+        },
+        {
+            title: "Numero uno",
+            name: "numero-1",
+            value: "num-1"
+        },
+        {
+            title: "Numero tres",
+            name: "numero-3",
+            value: "num-3"
+        }
+        ]
+    }
+
+    var configThree = {
+        typeTest: "words-select",
+        answer: "hola que-tal",
+        titleTest: "Seleccione la frase correcta",
+        fileImgs: [{
+                name: "hola",
+                file: "view/images/saludos/hola.png"
+            },
+            {
+                name: "que-tal",
+                file: "view/images/saludos/que tal.png"
+            }],
+        wordOptions: [{
+            title: "hola",
+            name: "Hola",
+            value: "hola"
+        },
+        {
+            title: "como estas",
+            name: "como estas",
+            value: "como-estas"
+        },
+        {
+            title: "que tal",
+            name: "que tal",
+            value: "que-tal"
+        },
+        {
+            title: "como te sientes",
+            name: "como te sientes",
+            value: "como-te-sientes"
+        }
+        ]
+    }
+
+    const mainTest = new MainTest("hola gente");
+    const testContent = document.getElementById('testContent');
+    var onAnswer = "";
+
+    mainTest.loadTest(configThree);
+    testContent.appendChild(mainTest.theTestContent);
+
+    var boxContent = document.getElementById('box-images');
+    var optionsContent = document.getElementById('box-options');
+    var nextButton = document.getElementById('next');
+
+    function addEvents(){
+        let listElement;
+        if(boxContent != null){
+            listElement = boxContent.childNodes;
+            listElement.forEach(index => {
+                index.addEventListener("click", function(){
+                    onAnswer = index.value;
+                });
             });
+        }else if(optionsContent != null) {
+            listElement = $("#box-options input");
+            for (let i = 0; i< listElement.length; i++){
+                listElement[i].addEventListener("click", ()=>{
+                    onAnswer = listElement[i].value;
+                });
+            }
         }
+
     }
 
-    function colocarBox(button){
-        let answerContainer = document.getElementById('boxAnswer');
-        let boxContainer = document.getElementById('questionContainer');
-        let buttonAnswer = document.createElement("button");
-        buttonAnswer.classList.add('btn');
-        buttonAnswer.classList.add('w-25');
-        buttonAnswer.classList.add('m-1');
-        buttonAnswer.classList.add('btn-outline-primary');
-        buttonAnswer.setAttribute("id",button.id);
-        buttonAnswer.innerHTML = button.innerHTML;
-        answerContainer.appendChild(buttonAnswer);
-        buttonAnswer.addEventListener("click", ()=>{
-            $(`#${buttonAnswer.id}`).fadeOut(250);
-            boxContainer.appendChild(buttonAnswer);
-            $(`#${buttonAnswer.id}`).fadeIn(250);
-        });
-    }
-    nextButton.addEventListener('click', comprobarAnswer);
-    showContent();
-    fillContainer(answer);
-    fill_images();
+    addEvents();
+    nextButton.addEventListener('click',()=>{
+        mainTest.checkAnswer(mainTest.correctAnswer, onAnswer);
+    });
+
 });

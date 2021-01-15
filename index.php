@@ -36,4 +36,3 @@ if (isset($_GET) && !empty($_GET)) {
 {
   include_once "principal.php";
 }
-
