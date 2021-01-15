@@ -33,7 +33,6 @@ $("#lds_search_word").keyup(function(e){
                 title: item.attr("data-word"),
                 video: item.attr("data-video")
             }));
-            
         });
     }else{
         element.parent().siblings('ul').html('');
