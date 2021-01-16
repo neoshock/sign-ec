@@ -87,6 +87,15 @@ let Test = class MainTest {
         return divParent;
     }
 
+    putContent(button, container){
+        var answer = "";
+        if(container[0] != undefined){
+            container[0].appendChild(button);
+        }else{
+            container.appendChild(button);
+        }
+    }
+
     generateContentThree(testThree){
         let divParent = document.createElement('div');
         let divSonOne = document.createElement('div');
@@ -148,7 +157,7 @@ let Test = class MainTest {
     }
 
     checkAnswer(correct, present){
-        if(correct == present){
+        if(correct === present){
             this.audioEvent("correct");
             $("#test .container").addClass("correct-answer");
             setTimeout(() => {
@@ -240,7 +249,7 @@ $('#test').ready(function(){
 
     var configThree = {
         typeTest: "words-select",
-        answer: "hola que-tal",
+        answer: "hola que-tal ",
         titleTest: "Seleccione la frase correcta",
         fileImgs: [{
                 name: "hola",
@@ -283,7 +292,7 @@ $('#test').ready(function(){
     const testContent = document.getElementById('testContent');
     var onAnswer = "";
 
-    mainTest.loadTest(configThree);
+    mainTest.loadTest(configTwo);
     testContent.appendChild(mainTest.theTestContent);
 
     var boxContent = document.getElementById('box-images');
@@ -307,6 +316,23 @@ $('#test').ready(function(){
                     onAnswer = listElement[i].value;
                 });
             }
+        }else if(wordBox != null){
+            listElement = wordBox.childNodes;
+            listElement.forEach(index => {
+                index.addEventListener('click',()=>{
+                    var answer = "";
+                    if(index.parentElement.classList[0] == 'word-content'){
+                        mainTest.putContent(index,document.getElementById('word-box'));
+                    }else{
+                        mainTest.putContent(index,document.getElementsByClassName('word-content'));
+                    }
+                    let wordContent = document.getElementsByClassName('word-content');
+                    for (let i = 0; i< wordContent[0].childNodes.length; i++){
+                        answer += wordContent[0].childNodes[i].value + " ";
+                    }
+                    onAnswer = answer;
+                });
+            });
         }
 
     }
