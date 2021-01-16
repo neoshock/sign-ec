@@ -1,5 +1,5 @@
 
-class MainTest {
+let Test = class MainTest {
 
     theTestContent;
     correctAnswer;
@@ -273,7 +273,13 @@ $('#test').ready(function(){
         ]
     }
 
-    const mainTest = new MainTest("hola gente");
+
+    var mainTest;
+    if (mainTest == null){
+        mainTest = new Test("hola gente");
+    }else{
+        console.log('the test');
+    }
     const testContent = document.getElementById('testContent');
     var onAnswer = "";
 
@@ -283,6 +289,7 @@ $('#test').ready(function(){
     var boxContent = document.getElementById('box-images');
     var optionsContent = document.getElementById('box-options');
     var nextButton = document.getElementById('next');
+    var wordBox = document.getElementById('word-box');
 
     function addEvents(){
         let listElement;

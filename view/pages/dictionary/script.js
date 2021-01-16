@@ -53,7 +53,7 @@ var showModalVideo = function(config)
     html += '      <div class="modal-body">';
     html += '        <div class="container">';
     html += '          <div class="row">';
-    html += '            <iframe src="'+config.video+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+    html += '            <iframe width="560" height="315" src="'+config.video+'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     html += '          </div>';
     html += '        </div>';
     html += '      </div>';
