@@ -1,12 +1,12 @@
-<div class="row justify-content-center m-3">
-    <div class="col-md-12">
+<div class="row justify-content-center pt-100">
+    <div class="col-6">
         <h4 class="text-center">Traducción español - lengua de señas (Ecuador)</h4>
         <p class="text-center">Ver significados de palabras en lenguaje de señas ecuatoriano</p>
-        <div class="input-group w-50 mx-auto">
+        <div class="input-group">
             <span class="input-group-text">@</span>
             <input type="text" id="lds_search_word" class="form-control" placeholder="Escribe una palabra" autocomplete="off">
         </div>
-        <ul class="list-group result-search-word w-50 mx-auto">
+        <ul class="list-group result-search-word">
             <!--<li class="list-group-item">Uno</li>-->
         </ul>
 
@@ -30,5 +30,4 @@
 </div>
 
 <div class="myModal"></div>
-
 
