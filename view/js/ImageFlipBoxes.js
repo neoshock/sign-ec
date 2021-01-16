@@ -25,6 +25,8 @@ function buildImageFlipBoxes(urlJson)
                 html += '            <h4>'+ obj.back.title +'</h4>';
                 html += '            <hr />';
                 html += '            <p>'+ obj.back.description +'</p>';
+                html += '            <buttom class="btn btn-danger btn-study" data-content="json/config.numbers.json">Estudiar</buttom>';
+                html += '            <buttom class="btn btn-success btn-test">Lección</buttom>';
                 html += '        </div>';
                 html += '    </div>';
                 html += '</div>';
@@ -64,3 +66,12 @@ if($('.box-flip').length > 0) {
         $(this).removeClass('flip');
     });
 }
+
+$("buttom.btn-study").click(function(){
+    console.log("clic en " + $(this).attr("data-content"));
+    // borrar el contenido actual (secciones)
+    $("#myContent").html("");
+    // cargar el nuevo contenido
+    $.getScript("view/js/Accordion.js");
+    console.log("termino")
+});

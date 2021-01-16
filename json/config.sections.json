@@ -2,6 +2,7 @@
     {
         "box_color": "warning",
         "image": "view/images/lds-numero.png",
+        "data_content": "json/config.numbers.json",
         "front": 
         {
             "title": "Números",
