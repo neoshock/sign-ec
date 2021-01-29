@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Números 0, 1, 2 ... 9",
+        "content": [
+            {
+                "word": "Uno",
+                "image": "view/images/numeros/uno.png",
+                "video": "https://www.youtube.com/embed/FF5JlbTsiqw",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Dos",
+                "image": "view/images/numeros/dos.png",
+                "video": "https://www.youtube.com/embed/8CJ1b9A5v8w",
+                "description": "Como hacer los movimientos de las manos"
+            }
+        ]
+    },
+    {
+        "title": "Números 10, 11, 12 ... 19",
+        "content": [
+            {
+                "word": "Uno",
+                "image": "view/images/numeros/uno.png",
+                "video": "https://www.youtube.com/embed/FF5JlbTsiqw",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Dos",
+                "image": "view/images/numeros/dos.png",
+                "video": "https://www.youtube.com/embed/8CJ1b9A5v8w",
+                "description": "Como hacer los movimientos de las manos"
+            }
+        ]
+    }
+]

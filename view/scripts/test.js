@@ -186,7 +186,7 @@ $('#test').ready(function(){
     var config = {
         typeTest: "img-select",
         answer: "img-2",
-        titleTest: "Cual de lo siguientes es 2",
+        titleTest: "¿Cuál de las siguientes imagenes es el número 2?",
         images: [{
             name: "numero-2",
             value: "img-2",
@@ -241,7 +241,7 @@ $('#test').ready(function(){
     var configThree = {
         typeTest: "words-select",
         answer: "hola que-tal",
-        titleTest: "Seleccione la frase correcta",
+        titleTest: "Arme la frase correcta",
         fileImgs: [{
                 name: "hola",
                 file: "view/images/saludos/hola.png"
@@ -277,7 +277,7 @@ $('#test').ready(function(){
     const testContent = document.getElementById('testContent');
     var onAnswer = "";
 
-    mainTest.loadTest(configThree);
+    mainTest.loadTest(config);
     testContent.appendChild(mainTest.theTestContent);
 
     var boxContent = document.getElementById('box-images');

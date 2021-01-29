@@ -33,7 +33,7 @@ function buildPersonalizedCard(config)
         html += '               <div class="card-body">';
         html += '                   <h5 class="card-title">'+ob.word+'</h5>';
         html += '                   <p class="card-text">'+ob.description+'</p>';
-        html += '                   <button class="btn btn-success" data-video="'+ob.video+'">Ver video</button>';
+        html += '                   <button type="button" class="btn btn-success mymodal" data-bs-toggle="modal" data-bs-target="#modal-video" data-title="'+ob.word+'" data-video="'+ob.video+'">Ver video</button>';
         html += '               </div>';
         html += '           </div>';
         html += '       </div>';
@@ -44,32 +44,3 @@ function buildPersonalizedCard(config)
     return html;
 }
 
-var configAccordion = 
-[
-    {
-        "title": "Numeros del 1 al 10",
-        "content": configCard // otro json
-    },
-    {
-        "title": "Numeros del 10 al 100",
-        "content": configCard // otro json
-    }
-]
-
-var configCard = 
-[
-    {
-        "word": "Uno",
-        "image": "view/images/numeros/uno.png",
-        "video": "https://www.youtube.com/embed/FF5JlbTsiqw",
-        "description": "Como hacer los movimientos de las manos"
-    },
-    {
-        "word": "Dos",
-        "image": "view/images/numeros/uno.png",
-        "video": "https://www.youtube.com/embed/FF5JlbTsiqw",
-        "description": "Como hacer los movimientos de las manos"
-    }
-]
-
-$("#myContent").html(buildAccordion(configAccordion));

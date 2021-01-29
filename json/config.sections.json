@@ -2,44 +2,46 @@
     {
         "box_color": "warning",
         "image": "view/images/lds-numero.png",
-        "data_content": "json/config.numbers.json",
+        "data_study": "json/config.accordion.numbers.json",
         "front": 
         {
             "title": "Números",
-            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+            "description": "Las manos unidas se mueven de adelante hacia atrás alternamente."
         },
         "back":
         {
             "title": "Números",
-            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+            "description": "Las manos unidas se mueven de adelante hacia atrás alternamente. La boca esta cerrada con los labios hacia afuera"
         }
     },
     {
         "box_color": "warning",
         "image": "view/images/lds-abecedario.png",
+        "data_study": "json/config.accordion.abecedary.json",
         "front": 
         {
             "title": "Abecedario",
-            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+            "description": "Las manos se abre y se desplaza hacia afuera, mientras los dedos se mueven."
         },
         "back":
         {
             "title": "Abecedario",
-            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+            "description": "Aprende el conjunto de letras del idioma español, ordenadas alfabéticamente"
         }
     },
     {
         "box_color": "warning",
         "image": "view/images/lds-amarillo.png",
+        "data_study": "json/config.accordion.colors.json",
         "front": 
         {
             "title": "Colores",
-            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+            "description": "La mano se dezplaza de adelante hacia atrás de la cabeza en forma ondulante."
         },
         "back":
         {
             "title": "Colores",
-            "description": "Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere"
+            "description": "Aprende los colores mas comunes en el lenguaje de señas, ordenados por categorías"
         }
     }
 ]

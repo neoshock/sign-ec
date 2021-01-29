@@ -25,7 +25,7 @@ function buildImageFlipBoxes(urlJson)
                 html += '            <h4>'+ obj.back.title +'</h4>';
                 html += '            <hr />';
                 html += '            <p>'+ obj.back.description +'</p>';
-                html += '            <buttom class="btn btn-danger btn-study" data-content="json/config.numbers.json">Estudiar</buttom>';
+                html += '            <buttom class="btn btn-danger btn-study" data-study="'+obj.data_study+'">Estudiar</buttom>';
                 html += '            <buttom class="btn btn-success btn-test">Lección</buttom>';
                 html += '        </div>';
                 html += '    </div>';
@@ -39,39 +39,69 @@ function buildImageFlipBoxes(urlJson)
     return html;
 }
 
-$("#myContent").html("").append(buildImageFlipBoxes("json/config.sections.json"));
+var content = $("#myContent");
 
-/** Flip Boxes
- *********************** **/
-if($('.box-flip').length > 0) {
-    
-    $('.box-flip').each(function() {
-        _height1 = $('.box1',this).outerHeight();
-        _height2 = $('.box2',this).outerHeight();
+content.html("").append(buildImageFlipBoxes("json/config.sections.json"));
+content.children().ready(function(){
+    console.log("cargado")
+    /** Flip Boxes
+     *********************** **/
+    if($('.box-flip').length > 0) {
+        
+        $('.box-flip').each(function() {
+            _height1 = $('.box1',this).outerHeight();
+            _height2 = $('.box2',this).outerHeight();
 
-        if(_height1 >= _height2) {
-            _height = _height1;
-        } else {
-            _height = _height2;
-        }
+            if(_height1 >= _height2) {
+                _height = _height1;
+            } else {
+                _height = _height2;
+            }
 
-        $(this).css({"min-height":_height+"px"});
-        $('.box1',this).css({"min-height":_height+"px"});
-        $('.box2',this).css({"min-height":_height+"px"});
+            $(this).css({"min-height":_height+"px"});
+            $('.box1',this).css({"min-height":_height+"px"});
+            $('.box2',this).css({"min-height":_height+"px"});
+        });
+        
+        $('.box-flip').hover(function() {
+            $(this).addClass('flip');
+        },function(){
+            $(this).removeClass('flip');
+        });
+    }
+
+    $("buttom.btn-study").click(function(){
+        console.log("clic en " + $(this).attr("data-study"));
+        var json = $(this).attr("data-study");
+        
+        // cargar el nuevo contenido
+        $.getScript("view/js/Accordion.js").done(function(){
+            console.log("cargado")
+            
+            // obtener el archi json de config
+            $.getJSON(json, function(data){
+                // borrar el contenido actual (secciones)
+                $("#myContent").html("");
+                if (data.length > 0)
+                {
+                    $("#myContent").html(buildAccordion(data)).append(showModalVideo({
+                        title: "a",
+                        video: ""
+                    }));
+                }
+            }).done(function(){
+                $("button.mymodal").click(function(){
+                    $(".modal-title").html($(this).attr("data-title"));
+                    $("iframe").attr("src", $(this).attr("data-video"));
+                });
+            }).fail(function(){
+                alert("Contenido no disponible");
+            });
+        });
     });
-    
-    $('.box-flip').hover(function() {
-        $(this).addClass('flip');
-    },function(){
-        $(this).removeClass('flip');
-    });
-}
 
-$("buttom.btn-study").click(function(){
-    console.log("clic en " + $(this).attr("data-content"));
-    // borrar el contenido actual (secciones)
-    $("#myContent").html("");
-    // cargar el nuevo contenido
-    $.getScript("view/js/Accordion.js");
-    console.log("termino")
+    $("buttom.btn-test").click(function(){
+        alert("Lección no disponible");
+    });
 });
+

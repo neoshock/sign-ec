@@ -15,8 +15,8 @@
                             </div>
                             <div class="col-md-5 titulos" style="text-align: start;">
                               <h2 class="mb-2 text-body fs-1 position-relative">APRENDE LENGUAJE DE SEÑAS</h2>
-                              <p class="text-muted mt-3 contenido fs-4 position-relative">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                              <a href="learns.html" class="btn btn-info fs-3 text-light">Quiero Aprender</a>
+                              <p class="text-muted mt-3 contenido fs-4 position-relative">El acceso al lenguaje de señas, en ámbitos como la educación y los servicios públicos, es fundamental para los derechos humanos de las personas sordas.</p>
+                              <a href="learn" class="btn btn-info fs-3 text-light btn-learn">Quiero Aprender</a>
                             </div>
                         </div>
                     </div>
@@ -27,9 +27,10 @@
                         <div class="d-flex position-relative">
                             <div class="col-md-5 titulos" style="text-align: start;">
                                 <h2 class="mb-2 text-light fs-1 position-relative">APRENDIZAJE INTERACTIVO</h2>
-                                <p class="text-light mt-3 contenido fs-4 position-relative">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
-                                <a href="#" class="btn btn-outline-warning fs-4">Contenido</a>
-                                <a href="#" class="btn btn-outline-success fs-4 text-light">Sobre Nostros</a>
+                                <p class="text-dark mt-3 contenido fs-4 position-relative">Como parte de este emprendimiento, todos los involucrados deben acostumbrarse a un proceso de aula más flexible y abierta, que incluye colaboración, libertad de elección y corrección adaptativa del curso.</p>
+                                <!--<a href="#" class="btn btn-outline-warning fs-4">Contenido</a>-->
+                                <!--<a href="#" class="btn btn-outline-success fs-4 text-light">Sobre Nostros</a>-->
+                                <a href="dictionary" class="btn btn-success fs-4 text-light btn-dictionary">Nuestro Diccionario</a>
                             </div>
                             <div class="col-md-6">
                                 <img src="files/covers/2.png" class="flex-shrink-0 me-3 cover position-relative" style="width: 100%; bottom: 100px;" alt="...">
