@@ -1,4 +1,8 @@
 <section class="test" id="test">
+    <div class="loader-container" id="loader">
+        <div class="loader-primary"></div>
+        <div class="loader-secondary"></div>
+    </div>
     <div class="container bg-light border rounded">
         <div class="row justify-content-center">
             <div class="col-md-12" id="progress">

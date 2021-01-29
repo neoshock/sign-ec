@@ -8,9 +8,14 @@ let Test = class MainTest {
 
     constructor (test){
         console.log(test);
+
     }
 
     loadTest(config) {
+        $(".loader-container").animate({
+            opacity: 0,
+            display: "none"
+        },500);
         if (config.typeTest == "img-select"){
             this.theTestContent = this.generateContentOne(config);
         }else if(config.typeTest == "select-answer"){
@@ -135,8 +140,7 @@ let Test = class MainTest {
         divSonOnThre.setAttribute('id','word-box');
 
         for(let i =0; i< testThree.wordOptions.length; i++){
-            let color = randonColors();
-            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}" style="${color};">${testThree.wordOptions[i].name}</button>`;
+            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}">${testThree.wordOptions[i].name}</button>`;
             divSonOnThre.innerHTML += buttonWord;
         }
 
@@ -292,7 +296,7 @@ $('#test').ready(function(){
     const testContent = document.getElementById('testContent');
     var onAnswer = "";
 
-    mainTest.loadTest(configTwo);
+    mainTest.loadTest(configThree);
     testContent.appendChild(mainTest.theTestContent);
 
     var boxContent = document.getElementById('box-images');

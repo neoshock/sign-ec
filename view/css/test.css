@@ -178,6 +178,7 @@
 
 .test-3 .word-content .btn {
     margin: 0px 6px;
+    border: 3px solid #56e2ac;
 }
 
 
@@ -187,11 +188,6 @@
     padding: 9px;
     font-size: 18px;
 }
-
-.test-3 .words .btn-colors {
-    margin: 15px 18px;
-}
-
 
 @keyframes loader-primary {
     0% {
