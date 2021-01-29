@@ -2,7 +2,11 @@
     {
         "word": "Uno",
         "image": "view/images/numeros/uno.png",
+<<<<<<< HEAD
         "video": "https://www.youtube.com/embed/FF5JlbTsiqw",
+=======
+        "video": "https://www.youtube.com/embed/FF5JlbTsiqw?controls=0",
+>>>>>>> f8f62b9800cf04de6d6ec46936e6feef09f58783
         "description": "Como hacer los movimientos de las manos"
     },
     {

@@ -1,5 +1,5 @@
 
-class MainTest {
+let Test = class MainTest {
 
     theTestContent;
     correctAnswer;
@@ -8,9 +8,14 @@ class MainTest {
 
     constructor (test){
         console.log(test);
+
     }
 
     loadTest(config) {
+        $(".loader-container").animate({
+            opacity: 0,
+            display: "none"
+        },500);
         if (config.typeTest == "img-select"){
             this.theTestContent = this.generateContentOne(config);
         }else if(config.typeTest == "select-answer"){
@@ -87,6 +92,15 @@ class MainTest {
         return divParent;
     }
 
+    putContent(button, container){
+        var answer = "";
+        if(container[0] != undefined){
+            container[0].appendChild(button);
+        }else{
+            container.appendChild(button);
+        }
+    }
+
     generateContentThree(testThree){
         let divParent = document.createElement('div');
         let divSonOne = document.createElement('div');
@@ -126,8 +140,7 @@ class MainTest {
         divSonOnThre.setAttribute('id','word-box');
 
         for(let i =0; i< testThree.wordOptions.length; i++){
-            let color = randonColors();
-            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}" style="${color};">${testThree.wordOptions[i].name}</button>`;
+            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}">${testThree.wordOptions[i].name}</button>`;
             divSonOnThre.innerHTML += buttonWord;
         }
 
@@ -148,7 +161,7 @@ class MainTest {
     }
 
     checkAnswer(correct, present){
-        if(correct == present){
+        if(correct === present){
             this.audioEvent("correct");
             $("#test .container").addClass("correct-answer");
             setTimeout(() => {
@@ -240,8 +253,13 @@ $('#test').ready(function(){
 
     var configThree = {
         typeTest: "words-select",
+<<<<<<< HEAD
         answer: "hola que-tal",
         titleTest: "Arme la frase correcta",
+=======
+        answer: "hola que-tal ",
+        titleTest: "Seleccione la frase correcta",
+>>>>>>> f8f62b9800cf04de6d6ec46936e6feef09f58783
         fileImgs: [{
                 name: "hola",
                 file: "view/images/saludos/hola.png"
@@ -273,7 +291,13 @@ $('#test').ready(function(){
         ]
     }
 
-    const mainTest = new MainTest("hola gente");
+
+    var mainTest;
+    if (mainTest == null){
+        mainTest = new Test("hola gente");
+    }else{
+        console.log('the test');
+    }
     const testContent = document.getElementById('testContent');
     var onAnswer = "";
 
@@ -283,6 +307,7 @@ $('#test').ready(function(){
     var boxContent = document.getElementById('box-images');
     var optionsContent = document.getElementById('box-options');
     var nextButton = document.getElementById('next');
+    var wordBox = document.getElementById('word-box');
 
     function addEvents(){
         let listElement;
@@ -300,6 +325,23 @@ $('#test').ready(function(){
                     onAnswer = listElement[i].value;
                 });
             }
+        }else if(wordBox != null){
+            listElement = wordBox.childNodes;
+            listElement.forEach(index => {
+                index.addEventListener('click',()=>{
+                    var answer = "";
+                    if(index.parentElement.classList[0] == 'word-content'){
+                        mainTest.putContent(index,document.getElementById('word-box'));
+                    }else{
+                        mainTest.putContent(index,document.getElementsByClassName('word-content'));
+                    }
+                    let wordContent = document.getElementsByClassName('word-content');
+                    for (let i = 0; i< wordContent[0].childNodes.length; i++){
+                        answer += wordContent[0].childNodes[i].value + " ";
+                    }
+                    onAnswer = answer;
+                });
+            });
         }
 
     }
