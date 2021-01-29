@@ -253,13 +253,8 @@ $('#test').ready(function(){
 
     var configThree = {
         typeTest: "words-select",
-<<<<<<< HEAD
         answer: "hola que-tal",
         titleTest: "Arme la frase correcta",
-=======
-        answer: "hola que-tal ",
-        titleTest: "Seleccione la frase correcta",
->>>>>>> f8f62b9800cf04de6d6ec46936e6feef09f58783
         fileImgs: [{
                 name: "hola",
                 file: "view/images/saludos/hola.png"
