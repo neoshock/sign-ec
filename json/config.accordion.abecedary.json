@@ -1,0 +1,168 @@
+[
+    {
+        "title": "Vocales",
+        "content": [
+            {
+                "word": "A",
+                "image": "view/images/abecedario/a.png",
+                "video": "view/videos/abecedario/a.mp4",
+                "description": "Cierra tu mano y deja el dedo pulgar fuera"
+            },
+            {
+                "word": "E",
+                "image": "view/images/abecedario/e.png",
+                "video": "view/videos/abecedario/e.mp4",
+                "description": "Semi cierra tu mano con todos los dedos"
+            },
+            {
+                "word": "I",
+                "image": "view/images/abecedario/i.png",
+                "video": "view/videos/abecedario/i.mp4",
+                "description": "Levanta solo el dedo pulgar"
+            },
+            {
+                "word": "O",
+                "image": "view/images/abecedario/o.png",
+                "video": "view/videos/abecedario/o.mp4",
+                "description": "Haz una forma de circulo con tus dedos"
+            },
+            {
+                "word": "U",
+                "image": "view/images/abecedario/u.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            }
+        ]
+    },
+    {
+        "title" : "Abecedario",
+        "content" : [
+            {
+                "word": "B",
+                "image": "view/images/abecedario/b.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "C",
+                "image": "view/images/abecedario/c.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "D",
+                "image": "view/images/abecedario/d.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "F",
+                "image": "view/images/abecedario/f.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "G",
+                "image": "view/images/abecedario/g.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "H",
+                "image": "view/images/abecedario/h.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "J",
+                "image": "view/images/abecedario/j.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "K",
+                "image": "view/images/abecedario/k.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "L",
+                "image": "view/images/abecedario/l.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "M",
+                "image": "view/images/abecedario/m.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "N",
+                "image": "view/images/abecedario/n.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "P",
+                "image": "view/images/abecedario/p.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "Q",
+                "image": "view/images/abecedario/q.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "R",
+                "image": "view/images/abecedario/r.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "S",
+                "image": "view/images/abecedario/s.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "T",
+                "image": "view/images/abecedario/t.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "V",
+                "image": "view/images/abecedario/v.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "W",
+                "image": "view/images/abecedario/w.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "X",
+                "image": "view/images/abecedario/x.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "Y",
+                "image": "view/images/abecedario/y.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            },
+            {
+                "word": "Z",
+                "image": "view/images/abecedario/z.png",
+                "video": "view/videos/abecedario/u.mp4",
+                "description": "Levanta tu dedo indice y el dedo medio"
+            }
+        ]
+    }
+]

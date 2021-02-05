@@ -1,6 +1,7 @@
 $("#content-dictionary").ready(function(){
     $("#lds_search_word").keyup(function(e){
         var element= $(this);
+        console.log(element.val())
         $(".result-search-word").html("");
         if (element.val().length > 0) {
             $.ajax({
