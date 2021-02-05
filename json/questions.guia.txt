@@ -1,0 +1,4 @@
+questions types
+0 = imagen -> seleccion texto
+1 = pregunta -> seleccion imagen
+2 = frase
