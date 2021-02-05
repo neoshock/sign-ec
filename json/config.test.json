@@ -1,0 +1,87 @@
+[{
+    "typeTest": "img-select",
+    "answer": "img-2",
+    "titleTest": "¿Cuál de las siguientes imagenes es el número 2?",
+    "images": [{
+        "name": "numero-2",
+        "value": "img-2",
+        "file": "view/images/numeros/dos.png"
+    },
+    {
+        "name": "numero-4",
+        "value": "img-4",
+        "file": "view/images/numeros/cuatro.png"
+    },
+    {
+        "name": "numero-1",
+        "value": "img-1",
+        "file": "view/images/numeros/uno.png"
+    },
+    {
+        "name": "numero-3",
+        "value": "img-3",
+        "file": "view/images/numeros/tres.png"
+    }
+    ]
+},
+{
+    "typeTest": "select-answer",
+    "answer": "num-2",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/numeros/dos.png",
+    "options": [{
+        "title": "Numero dos",
+        "name": "numero-2",
+        "value": "num-2"
+    },
+    {
+        "title": "Numero cuatro",
+        "name": "numero-4",
+        "value": "num-4"
+    },
+    {
+        "title": "Numero uno",
+        "name": "numero-1",
+        "value": "num-1"
+    },
+    {
+        "title": "Numero tres",
+        "name": "numero-3",
+        "value": "num-3"
+    }
+    ]
+},
+{
+    "typeTest": "words-select",
+    "answer": "hola que-tal ",
+    "titleTest": "Arme la frase correcta",
+    "fileImgs": [{
+            "name": "hola",
+            "file": "view/images/saludos/hola.png"
+        },
+        {
+            "name": "que-tal",
+            "file": "view/images/saludos/que tal.png"
+        }],
+    "wordOptions": [{
+        "title": "hola",
+        "name": "Hola",
+        "value": "hola"
+    },
+    {
+        "title": "como estas",
+        "name": "como estas",
+        "value": "como-estas"
+    },
+    {
+        "title": "que tal",
+        "name": "que tal",
+        "value": "que-tal"
+    },
+    {
+        "title": "como te sientes",
+        "name": "como te sientes",
+        "value": "como-te-sientes"
+    }
+    ]
+}]

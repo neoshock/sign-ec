@@ -189,6 +189,65 @@
     font-size: 18px;
 }
 
+.win-container{
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    left: 25%;
+    top: 15%;
+}
+
+.win-container .win-screen {
+    width: 75%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 6px;
+    border: 3px solid #29f5a7;
+    border-radius: 18px;
+    color: #29f5a7;
+    transition: all 0.1s;
+}
+
+.win-container .win-screen:hover {
+    background-color: #29f5a723;
+    animation: animateText 1s infinite;
+}
+
+.character {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background: url("../../files/tests/Congratulation/Render.png");
+    animation: animateCharacter 1.25s steps(15);
+    transition: all 0.1s;
+}
+
+.character:hover{
+    animation: animateCharacter 1.25s steps(15) infinite;
+}
+
+@keyframes animateText {
+    0%{
+        box-shadow: 1px 1px rgb(0, 255, 85);
+        font-size: 48px;
+    }
+    100%{
+        box-shadow: 4px 4px rgb(0, 255, 85);
+        font-size: 50px;
+    }
+}
+
+@keyframes animateCharacter {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -4500px;
+    }
+}
+
 @keyframes loader-primary {
     0% {
         transform: translate(-50%,-50%) rotate(0deg);

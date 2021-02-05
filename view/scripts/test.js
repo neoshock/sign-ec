@@ -5,13 +5,15 @@ let Test = class MainTest {
     correctAnswer;
     progress = document.getElementById('progress-bar');
     currentProgress = 0;
+    currentInterval = 0;
+    onIndex = 0;
 
     constructor (test){
         console.log(test);
 
     }
 
-    loadTest(config) {
+    insertTest(config) {
         $(".loader-container").animate({
             opacity: 0,
             display: "none"
@@ -161,15 +163,23 @@ let Test = class MainTest {
     }
 
     checkAnswer(correct, present){
+        $(".loader-container").animate({
+            opacity: 100,
+            display: "block"
+        },250);
         if(correct === present){
             this.audioEvent("correct");
             $("#test .container").addClass("correct-answer");
             setTimeout(() => {
                 $("#test .container").removeClass("correct-answer");
             }, 500);
-            this.currentProgress += 20;
+            this.currentProgress += this.currentInterval;
             this.progress.toggleAttribute('aria-valuenow',`${this.currentProgress}`);
             this.progress.style.width = `${this.currentProgress}%`;
+            this.onIndex += 1;
+            if(this.currentProgress >= 100){
+                this.congratulationTest();
+            }
         }else{
             this.audioEvent("incorrect");
             $("#test .container").addClass("incorrect-answer");
@@ -177,6 +187,35 @@ let Test = class MainTest {
                 $("#test .container").removeClass("incorrect-answer");
             }, 500);
         }
+    }
+
+    congratulationTest(){
+        $(".loader-container").animate({
+            opacity: 0,
+            display: "none"
+        },250);
+        $('#test .container').fadeOut(500);
+        var theTest = document.getElementById('test');
+        var audio = document.createElement('audio');
+        audio.setAttribute("src","files/sounds/Win-Sound.wav");
+
+        let divFather = document.createElement('div');
+        let character = document.createElement('div');
+        let winText = document.createElement('div');
+
+        divFather.classList.add('win-container');
+        character.classList.add("character");
+        winText.classList.add("win-screen");
+        
+        winText.innerHTML = "Felicitaciones";
+        divFather.appendChild(character);
+        divFather.appendChild(winText);
+        theTest.appendChild(divFather);
+        $(".win-container").hide();
+        setTimeout(function(){
+            $(".win-container").fadeIn(1000);
+            audio.play();
+        },500);
     }
 
     audioEvent(current){
@@ -196,96 +235,9 @@ class TestOne {
 }
 
 $('#test').ready(function(){
-    var config = {
-        typeTest: "img-select",
-        answer: "img-2",
-        titleTest: "¿Cuál de las siguientes imagenes es el número 2?",
-        images: [{
-            name: "numero-2",
-            value: "img-2",
-            file: "view/images/numeros/dos.png"
-        },
-        {
-            name: "numero-4",
-            value: "img-4",
-            file: "view/images/numeros/cuatro.png"
-        },
-        {
-            name: "numero-1",
-            value: "img-1",
-            file: "view/images/numeros/uno.png"
-        },
-        {
-            name: "numero-3",
-            value: "img-3",
-            file: "view/images/numeros/tres.png"
-        }
-        ]
-    }
 
-    var configTwo = {
-        typeTest: "select-answer",
-        answer: "num-2",
-        titleTest: "Seleccione la respuesta correcta",
-        fileImg: "view/images/numeros/dos.png",
-        options: [{
-            title: "Numero dos",
-            name: "numero-2",
-            value: "num-2"
-        },
-        {
-            title: "Numero cuatro",
-            name: "numero-4",
-            value: "num-4"
-        },
-        {
-            title: "Numero uno",
-            name: "numero-1",
-            value: "num-1"
-        },
-        {
-            title: "Numero tres",
-            name: "numero-3",
-            value: "num-3"
-        }
-        ]
-    }
-
-    var configThree = {
-        typeTest: "words-select",
-        answer: "hola que-tal",
-        titleTest: "Arme la frase correcta",
-        fileImgs: [{
-                name: "hola",
-                file: "view/images/saludos/hola.png"
-            },
-            {
-                name: "que-tal",
-                file: "view/images/saludos/que tal.png"
-            }],
-        wordOptions: [{
-            title: "hola",
-            name: "Hola",
-            value: "hola"
-        },
-        {
-            title: "como estas",
-            name: "como estas",
-            value: "como-estas"
-        },
-        {
-            title: "que tal",
-            name: "que tal",
-            value: "que-tal"
-        },
-        {
-            title: "como te sientes",
-            name: "como te sientes",
-            value: "como-te-sientes"
-        }
-        ]
-    }
-
+    const testContent = document.getElementById('testContent');
+    var dataTestConfig;
 
     var mainTest;
     if (mainTest == null){
@@ -293,18 +245,42 @@ $('#test').ready(function(){
     }else{
         console.log('the test');
     }
-    const testContent = document.getElementById('testContent');
+
     var onAnswer = "";
-
-    mainTest.loadTest(config);
-    testContent.appendChild(mainTest.theTestContent);
-
-    var boxContent = document.getElementById('box-images');
-    var optionsContent = document.getElementById('box-options');
     var nextButton = document.getElementById('next');
-    var wordBox = document.getElementById('word-box');
+
+    function loadTest(){
+        $.ajax({
+            url: "json/config.test.json",
+            dataType: "json",
+            async: false
+        }).done(function(data){
+            dataTestConfig = data;
+            mainTest.currentInterval = Math.floor(100 / data.length) + 1;
+        });
+    } 
+
+    function reloadTest(){
+        if(mainTest.onIndex < dataTestConfig.length){
+            mainTest.insertTest(dataTestConfig[mainTest.onIndex]);
+        }   
+        if(testContent.childElementCount > 0){
+            testContent.removeChild(testContent.childNodes[1]);
+        }
+        if(mainTest.onIndex == dataTestConfig.length){
+            testContent.remove();
+        }else{
+            testContent.appendChild(mainTest.theTestContent);
+        }
+        addEvents();   
+    }
 
     function addEvents(){
+
+        var boxContent = document.getElementById('box-images');
+        var optionsContent = document.getElementById('box-options');
+        var wordBox = document.getElementById('word-box');
+
         let listElement;
         if(boxContent != null){
             listElement = boxContent.childNodes;
@@ -341,9 +317,13 @@ $('#test').ready(function(){
 
     }
 
-    addEvents();
+    loadTest();
+    reloadTest();
     nextButton.addEventListener('click',()=>{
         mainTest.checkAnswer(mainTest.correctAnswer, onAnswer);
+        setTimeout(() => {
+            reloadTest();
+        }, 500);
     });
 
 });
