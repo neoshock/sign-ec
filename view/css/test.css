@@ -116,6 +116,7 @@
 
 .test-1 .images {
     padding: 15px;
+    margin: 15px auto;
 }
 
 .test-1 .images input[type="image"] {
@@ -226,6 +227,11 @@
 
 .character:hover{
     animation: animateCharacter 1.25s steps(15) infinite;
+}
+
+.alert-answer {
+    position: absolute;
+    top: 25%;
 }
 
 @keyframes animateText {

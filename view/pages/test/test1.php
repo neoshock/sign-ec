@@ -24,5 +24,25 @@
                 <button class="btn btn-secondary fs-4" id="jump">Saltar Pregunta</button>
             </div>
         </div>
+        <div class="alert-answer" id="answer">
+            <!-- <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver respuesta</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Respuesta correcta</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        La respuesta correcta es la letra E
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendido</button>
+                    </div>
+                  </div>
+                </div>
+            </div>       -->
+        </div>
     </div>
 </section>

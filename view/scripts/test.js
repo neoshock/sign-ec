@@ -2,11 +2,13 @@
 let Test = class MainTest {
 
     theTestContent;
+    theTestLenght;
     correctAnswer;
     progress = document.getElementById('progress-bar');
     currentProgress = 0;
     currentInterval = 0;
     onIndex = 0;
+    onConfig = "";
 
     constructor (test){
         console.log(test);
@@ -25,6 +27,7 @@ let Test = class MainTest {
         }else if(config.typeTest == "words-select"){
             this.theTestContent = this.generateContentThree(config);
         }
+        this.onConfig = config;
     }
 
     generateContentOne(testOne){
@@ -163,10 +166,6 @@ let Test = class MainTest {
     }
 
     checkAnswer(correct, present){
-        $(".loader-container").animate({
-            opacity: 100,
-            display: "block"
-        },250);
         if(correct === present){
             this.audioEvent("correct");
             $("#test .container").addClass("correct-answer");
@@ -176,24 +175,80 @@ let Test = class MainTest {
             this.currentProgress += this.currentInterval;
             this.progress.toggleAttribute('aria-valuenow',`${this.currentProgress}`);
             this.progress.style.width = `${this.currentProgress}%`;
-            this.onIndex += 1;
-            if(this.currentProgress >= 100){
+            if(this.currentProgress > 100){
                 this.congratulationTest();
             }
+            return true;
         }else{
             this.audioEvent("incorrect");
             $("#test .container").addClass("incorrect-answer");
             setTimeout(() => {
                 $("#test .container").removeClass("incorrect-answer");
             }, 500);
+            return false;
         }
+    }
+
+    showAnswer(testElement){
+        var testContainer = document.getElementById('answer');
+        var buttonElement = `<button id="showDialog" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalRespuesta">Ver respuesta</button>`;
+        testContainer.innerHTML = buttonElement;
+        if(testElement.typeTest == "img-select"){
+            let imgAnswer = "";
+            for(let i = 0; i< testElement.images.length; i++){
+                if(testElement.images[i].value == testElement.answer){
+                    imgAnswer = `<img src="${testElement.images[i].file}" class="d-flex w-50 mx-auto" alt="${testElement.images[i].value}">`;
+                }
+            }
+            testContainer.innerHTML += this.generateFeedbackContent(imgAnswer);
+        }else if(testElement.typeTest = "select-answer"){
+            testContainer.innerHTML += this.generateFeedbackContent(testElement.answer);
+        }else{
+            testContainer.innerHTML += this.generateFeedbackContent('La respuesta correcta es 2');
+        }
+    }
+
+    nextQuestion(functionReload){
+        $('#answer button').each((index, element)=>{
+            $(element).click(function(){
+                if(element.classList[1] == "btn-success" || element.classList[0] == "btn-close"){
+                    $(".loader-container").animate({
+                        opacity: 100,
+                        display: "block"
+                    },500);
+                    $('#answer').hide(100);
+                    functionReload();
+                }
+            });
+        });
+    }
+
+    generateFeedbackContent(theContent){
+        var title = "Respuesta correcta";
+        var htmlContent = `<div class="modal fade" id="modalRespuesta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">${title}</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                <div class="modal-body">
+                    ${theContent}
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+            </div>
+        </div>`;
+        return htmlContent;
     }
 
     congratulationTest(){
         $(".loader-container").animate({
             opacity: 0,
             display: "none"
-        },250);
+        },500);
         $('#test .container').fadeOut(500);
         var theTest = document.getElementById('test');
         var audio = document.createElement('audio');
@@ -215,7 +270,7 @@ let Test = class MainTest {
         setTimeout(function(){
             $(".win-container").fadeIn(1000);
             audio.play();
-        },500);
+        },1000);
     }
 
     audioEvent(current){
@@ -238,41 +293,61 @@ $('#test').ready(function(){
 
     const testContent = document.getElementById('testContent');
     var dataTestConfig;
-
     var mainTest;
-    if (mainTest == null){
+    var randomArray = [];
+    var counter = 0;
+
+    if (mainTest != null){
+        mainTest = null;
         mainTest = new Test("hola gente");
     }else{
-        console.log('the test');
+        mainTest = new Test('Hola');
     }
 
     var onAnswer = "";
     var nextButton = document.getElementById('next');
+    var jumpButton = document.getElementById('jump');
 
     function loadTest(){
         $.ajax({
-            url: "json/config.test.json",
+            url: "json/config.abecedario.json",
             dataType: "json",
             async: false
         }).done(function(data){
             dataTestConfig = data;
-            mainTest.currentInterval = Math.floor(100 / data.length) + 1;
+            mainTest.theTestLenght = 10;
+            mainTest.currentInterval = Math.floor(100 / mainTest.theTestLenght) + 1;
         });
     } 
 
     function reloadTest(){
         if(mainTest.onIndex < dataTestConfig.length){
+            mainTest.onIndex = returnRandom(dataTestConfig.length);
             mainTest.insertTest(dataTestConfig[mainTest.onIndex]);
         }   
         if(testContent.childElementCount > 0){
             testContent.removeChild(testContent.childNodes[1]);
         }
-        if(mainTest.onIndex == dataTestConfig.length){
-            testContent.remove();
-        }else{
-            testContent.appendChild(mainTest.theTestContent);
+        testContent.appendChild(mainTest.theTestContent);
+        addEvents();
+    }
+
+    function returnRandom(dataLenght){
+        let randomNumber = Math.floor(Math.random() * dataLenght);
+        let c = counter;
+        randomArray[counter] = randomNumber;
+        for(let i = 0; i< randomArray.length; i++){
+            if(randomNumber == randomArray[i]){
+                randomNumber = Math.floor(Math.random() * dataLenght);
+            }else{
+                randomArray[c] = randomNumber;
+            }
         }
-        addEvents();   
+        if(counter >= dataLenght -1){
+            counter = 0;
+        }
+        counter++;
+        return randomArray[c];
     }
 
     function addEvents(){
@@ -319,11 +394,31 @@ $('#test').ready(function(){
 
     loadTest();
     reloadTest();
+
     nextButton.addEventListener('click',()=>{
-        mainTest.checkAnswer(mainTest.correctAnswer, onAnswer);
-        setTimeout(() => {
+        if(mainTest.checkAnswer(mainTest.correctAnswer, onAnswer)){
+            $(".loader-container").animate({
+                opacity: 100,
+                display: "block"
+            },500);
+            setTimeout(() => {
+                reloadTest();
+            }, 1000);
+        }else{
+            $('#answer').show(100);
+            mainTest.showAnswer(mainTest.onConfig);
+            mainTest.nextQuestion(reloadTest);
+        }
+    });
+
+    jumpButton.addEventListener('click', function(){
+        $(".loader-container").animate({
+            opacity: 100,
+            display: "block"
+        },500);
+        setTimeout(()=>{
             reloadTest();
-        }, 500);
+        },1000);
     });
 
 });
