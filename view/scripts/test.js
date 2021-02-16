@@ -1,41 +1,37 @@
+var theTestContent;
+var theTestLenght;
+var correctAnswer;
+var progress = document.getElementById('progress-bar');
+var currentProgress = 0;
+var currentInterval = 0;
+var onIndex = 0;
+var onConfig = "";
 
-let Test = class MainTest {
-
-    theTestContent;
-    theTestLenght;
-    correctAnswer;
-    progress = document.getElementById('progress-bar');
-    currentProgress = 0;
-    currentInterval = 0;
-    onIndex = 0;
-    onConfig = "";
-
-    constructor (test){
-        console.log(test);
-
+    function inicializador (){
+        console.log("La clase ha sido instanciada");
     }
 
-    insertTest(config) {
+    function insertTest(config) {
         $(".loader-container").animate({
             opacity: 0,
             display: "none"
         },500);
         if (config.typeTest == "img-select"){
-            this.theTestContent = this.generateContentOne(config);
+            theTestContent = generateContentOne(config);
         }else if(config.typeTest == "select-answer"){
-            this.theTestContent = this.generateContentTwo(config);
+            theTestContent = generateContentTwo(config);
         }else if(config.typeTest == "words-select"){
-            this.theTestContent = this.generateContentThree(config);
+            theTestContent = generateContentThree(config);
         }
-        this.onConfig = config;
+        onConfig = config;
     }
 
-    generateContentOne(testOne){
+    function generateContentOne(testOne){
         let divParent = document.createElement('div');
         let contentTitle = `<h5 class="fs-2 m-3 text-secondary text-center">${testOne.titleTest}</h5>`;
         let divChildren = document.createElement('div');
         
-        this.correctAnswer = testOne.answer;
+        correctAnswer = testOne.answer;
 
         divParent.classList.add('test-1');
         divParent.classList.add('w-100');
@@ -55,7 +51,7 @@ let Test = class MainTest {
         return divParent;
     }
 
-    generateContentTwo(testTwo){
+    function generateContentTwo(testTwo){
         let divParent = document.createElement('div');
         let divSonOne = document.createElement('div');
         let divSonTwo = document.createElement('div');
@@ -92,12 +88,12 @@ let Test = class MainTest {
 
         divParent.appendChild(divSonOnThre);
 
-        this.correctAnswer = testTwo.answer;
+        correctAnswer = testTwo.answer;
 
         return divParent;
     }
 
-    putContent(button, container){
+    function putContent(button, container){
         var answer = "";
         if(container[0] != undefined){
             container[0].appendChild(button);
@@ -106,7 +102,7 @@ let Test = class MainTest {
         }
     }
 
-    generateContentThree(testThree){
+    function generateContentThree(testThree){
         let divParent = document.createElement('div');
         let divSonOne = document.createElement('div');
         let divSonTwo = document.createElement('div');
@@ -151,7 +147,7 @@ let Test = class MainTest {
 
         divParent.appendChild(divSonOnThre);
 
-        this.correctAnswer = testThree.answer;
+        correctAnswer = testThree.answer;
 
         function randonColors(){
             let colorOne,colorTwo,colorThree;
@@ -165,22 +161,22 @@ let Test = class MainTest {
         return divParent;
     }
 
-    checkAnswer(correct, present){
+    function checkAnswer(correct, present){
         if(correct === present){
-            this.audioEvent("correct");
+            audioEvent("correct");
             $("#test .container").addClass("correct-answer");
             setTimeout(() => {
                 $("#test .container").removeClass("correct-answer");
             }, 500);
-            this.currentProgress += this.currentInterval;
-            this.progress.toggleAttribute('aria-valuenow',`${this.currentProgress}`);
-            this.progress.style.width = `${this.currentProgress}%`;
-            if(this.currentProgress > 100){
-                this.congratulationTest();
+            currentProgress += currentInterval;
+            progress.toggleAttribute('aria-valuenow',`${currentProgress}`);
+            progress.style.width = `${currentProgress}%`;
+            if(currentProgress > 100){
+                congratulationTest();
             }
             return true;
         }else{
-            this.audioEvent("incorrect");
+            audioEvent("incorrect");
             $("#test .container").addClass("incorrect-answer");
             setTimeout(() => {
                 $("#test .container").removeClass("incorrect-answer");
@@ -189,7 +185,7 @@ let Test = class MainTest {
         }
     }
 
-    showAnswer(testElement,buttonNext,buttonJump){
+    function showAnswer(testElement,buttonNext,buttonJump){
         buttonNext.setAttribute("disabled","true");
         buttonJump.setAttribute("disabled","true");
         var testContainer = document.getElementById('answer');
@@ -202,15 +198,15 @@ let Test = class MainTest {
                     imgAnswer = `<img src="${testElement.images[i].file}" class="d-flex w-50 mx-auto" alt="${testElement.images[i].value}">`;
                 }
             }
-            testContainer.innerHTML += this.generateFeedbackContent(imgAnswer);
+            testContainer.innerHTML += generateFeedbackContent(imgAnswer);
         }else if(testElement.typeTest = "select-answer"){
-            testContainer.innerHTML += this.generateFeedbackContent(testElement.answer);
+            testContainer.innerHTML += generateFeedbackContent(testElement.answer);
         }else{
-            testContainer.innerHTML += this.generateFeedbackContent('La respuesta correcta es 2');
+            testContainer.innerHTML += generateFeedbackContent('La respuesta correcta es 2');
         }
     }
 
-    nextQuestion(functionReload,buttonNext,buttonJump){
+    function nextQuestion(functionReload,buttonNext,buttonJump){
         $('#answer button').each((index, element)=>{
             $(element).click(function(){
                 if(element.classList[1] == "btn-success" || element.classList[0] == "btn-close"){
@@ -227,7 +223,7 @@ let Test = class MainTest {
         });
     }
 
-    generateFeedbackContent(theContent){
+    function generateFeedbackContent(theContent){
         var title = "Respuesta correcta";
         var htmlContent = `<div class="modal fade" id="modalRespuesta" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -248,7 +244,7 @@ let Test = class MainTest {
         return htmlContent;
     }
 
-    congratulationTest(){
+    function congratulationTest(){
         $(".loader-container").animate({
             opacity: 0,
             display: "none"
@@ -277,7 +273,7 @@ let Test = class MainTest {
         },1000);
     }
 
-    audioEvent(current){
+    function audioEvent(current){
         var audioElement = document.createElement('audio');
         if(current == "correct"){
             audioElement.setAttribute("src","files/sounds/REV-Chiptune FX 08.wav");
@@ -287,30 +283,20 @@ let Test = class MainTest {
         audioElement.play();
     }
 
-}
 
-class TestOne {
-
-}
 
 $('#test').ready(function(){
-
     const testContent = document.getElementById('testContent');
     var dataTestConfig;
     var mainTest;
     var randomArray = [];
     var counter = 0;
-
-    if (mainTest != null){
-        mainTest = null;
-        mainTest = new Test("hola gente");
-    }else{
-        mainTest = new Test('Hola');
-    }
-
     var onAnswer = "";
+
     var nextButton = document.getElementById('next');
     var jumpButton = document.getElementById('jump');
+
+    inicializador();
 
     function loadTest(){
         $.ajax({
@@ -319,20 +305,20 @@ $('#test').ready(function(){
             async: false
         }).done(function(data){
             dataTestConfig = data;
-            mainTest.theTestLenght = 10;
-            mainTest.currentInterval = Math.floor(100 / mainTest.theTestLenght) + 1;
+            theTestLenght = 10;
+            currentInterval = Math.floor(100 / theTestLenght) + 1;
         });
     } 
 
     function reloadTest(){
-        if(mainTest.onIndex < dataTestConfig.length){
-            mainTest.onIndex = returnRandom(dataTestConfig.length);
-            mainTest.insertTest(dataTestConfig[mainTest.onIndex]);
+        if(onIndex < dataTestConfig.length){
+            onIndex = returnRandom(dataTestConfig.length);
+            insertTest(dataTestConfig[onIndex]);
         }   
         if(testContent.childElementCount > 0){
             testContent.removeChild(testContent.childNodes[1]);
         }
-        testContent.appendChild(mainTest.theTestContent);
+        testContent.appendChild(theTestContent);
         addEvents();
     }
 
@@ -381,9 +367,9 @@ $('#test').ready(function(){
                 index.addEventListener('click',()=>{
                     var answer = "";
                     if(index.parentElement.classList[0] == 'word-content'){
-                        mainTest.putContent(index,document.getElementById('word-box'));
+                        putContent(index,document.getElementById('word-box'));
                     }else{
-                        mainTest.putContent(index,document.getElementsByClassName('word-content'));
+                        putContent(index,document.getElementsByClassName('word-content'));
                     }
                     let wordContent = document.getElementsByClassName('word-content');
                     for (let i = 0; i< wordContent[0].childNodes.length; i++){
@@ -400,7 +386,7 @@ $('#test').ready(function(){
     reloadTest();
 
     nextButton.addEventListener('click',()=>{
-        if(mainTest.checkAnswer(mainTest.correctAnswer, onAnswer)){
+        if(checkAnswer(correctAnswer, onAnswer)){
             $(".loader-container").animate({
                 opacity: 100,
                 display: "block"
@@ -410,8 +396,8 @@ $('#test').ready(function(){
             }, 1000);
         }else{
             $('#answer').show(100);
-            mainTest.showAnswer(mainTest.onConfig,nextButton,jumpButton);
-            mainTest.nextQuestion(reloadTest,nextButton,jumpButton);
+            showAnswer(onConfig,nextButton,jumpButton);
+            nextQuestion(reloadTest,nextButton,jumpButton);
         }
     });
 
@@ -422,7 +408,7 @@ $('#test').ready(function(){
         },500);
         setTimeout(()=>{
             reloadTest();
-            mainTest.nextQuestion();
+            nextQuestion();
         },1000);
     });
 
