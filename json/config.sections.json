@@ -3,7 +3,6 @@
         "box_color": "warning",
         "image": "view/images/lds-numero.png",
         "data_study": "json/config.accordion.numbers.json",
-        "data_test": "json/config.abecedario.json",
         "front": 
         {
             "title": "Números",
@@ -19,6 +18,7 @@
         "box_color": "warning",
         "image": "view/images/lds-abecedario.png",
         "data_study": "json/config.accordion.abecedary.json",
+        "data_test": "json/config.abecedario.json",
         "front": 
         {
             "title": "Abecedario",
