@@ -1,0 +1,25 @@
+[
+    {
+        "title" : "Primarios",
+        "content" : [
+            {
+                "word": "Azul",
+                "image": "view/images/colores/azul.png",
+                "video": "https://www.youtube.com/embed/AJfcUyFd2_A",
+                "description": "La mano se desliza por la mejilla"
+            },
+            {
+                "word": "Amarrillo",
+                "image": "view/images/colores/amarillo.png",
+                "video": "https://www.youtube.com/embed/H8yG03AaOqc",
+                "description": "La mano se desplaza de adelante hacia atrás de la cabeza en forma ondulante"
+            },
+            {
+                "word": "Rojo",
+                "image": "view/images/colores/rojo.png",
+                "video": "https://www.youtube.com/embed/p2lhtZkZOPo",
+                "description": "La mano se desplaza de adelante hacia atrás de la cabeza en forma ondulante"
+            }
+        ]
+    }
+]
