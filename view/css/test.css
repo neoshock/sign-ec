@@ -230,8 +230,8 @@
 }
 
 .alert-answer {
-    position: absolute;
-    top: 25%;
+    width: 25%;
+    margin: 3px 15px;
 }
 
 @keyframes animateText {

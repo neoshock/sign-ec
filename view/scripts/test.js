@@ -189,9 +189,11 @@ let Test = class MainTest {
         }
     }
 
-    showAnswer(testElement){
+    showAnswer(testElement,buttonNext,buttonJump){
+        buttonNext.setAttribute("disabled","true");
+        buttonJump.setAttribute("disabled","true");
         var testContainer = document.getElementById('answer');
-        var buttonElement = `<button id="showDialog" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalRespuesta">Ver respuesta</button>`;
+        var buttonElement = `<button id="showDialog" type="button" class="btn btn-danger fs-4" data-bs-toggle="modal" data-bs-target="#modalRespuesta">Ver respuesta</button>`;
         testContainer.innerHTML = buttonElement;
         if(testElement.typeTest == "img-select"){
             let imgAnswer = "";
@@ -208,10 +210,12 @@ let Test = class MainTest {
         }
     }
 
-    nextQuestion(functionReload){
+    nextQuestion(functionReload,buttonNext,buttonJump){
         $('#answer button').each((index, element)=>{
             $(element).click(function(){
                 if(element.classList[1] == "btn-success" || element.classList[0] == "btn-close"){
+                    buttonNext.removeAttribute("disabled");
+                    buttonJump.removeAttribute("disabled");
                     $(".loader-container").animate({
                         opacity: 100,
                         display: "block"
@@ -406,8 +410,8 @@ $('#test').ready(function(){
             }, 1000);
         }else{
             $('#answer').show(100);
-            mainTest.showAnswer(mainTest.onConfig);
-            mainTest.nextQuestion(reloadTest);
+            mainTest.showAnswer(mainTest.onConfig,nextButton,jumpButton);
+            mainTest.nextQuestion(reloadTest,nextButton,jumpButton);
         }
     });
 
@@ -418,6 +422,7 @@ $('#test').ready(function(){
         },500);
         setTimeout(()=>{
             reloadTest();
+            mainTest.nextQuestion();
         },1000);
     });
 
