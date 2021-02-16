@@ -1,14 +1,21 @@
 var theTestContent;
 var theTestLenght;
 var correctAnswer;
-var progress = document.getElementById('progress-bar');
+var progress;
 var currentProgress = 0;
 var currentInterval = 0;
 var onIndex = 0;
 var onConfig = "";
 
     function inicializador (){
-        console.log("La clase ha sido instanciada");
+        theTestContent = null;
+        theTestLenght = null;
+        correctAnswer = null;
+        progress = document.getElementById('progress-bar');
+        currentProgress = 0;
+        currentInterval = 0;
+        onIndex = 0;
+        onConfig = "";
     }
 
     function insertTest(config) {
@@ -189,7 +196,7 @@ var onConfig = "";
         buttonNext.setAttribute("disabled","true");
         buttonJump.setAttribute("disabled","true");
         var testContainer = document.getElementById('answer');
-        var buttonElement = `<button id="showDialog" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalRespuesta">Ver respuesta</button>`;
+        var buttonElement = `<button id="showDialog" type="button" class="btn btn-danger fs-4" data-bs-toggle="modal" data-bs-target="#modalRespuesta">Ver respuesta</button>`;
         testContainer.innerHTML = buttonElement;
         if(testElement.typeTest == "img-select"){
             let imgAnswer = "";
@@ -210,6 +217,8 @@ var onConfig = "";
         $('#answer button').each((index, element)=>{
             $(element).click(function(){
                 if(element.classList[1] == "btn-success" || element.classList[0] == "btn-close"){
+                    buttonNext.removeAttribute("disabled");
+                    buttonJump.removeAttribute("disabled");
                     $(".loader-container").animate({
                         opacity: 100,
                         display: "block"
@@ -298,7 +307,7 @@ $('#test').ready(function(){
 
     function loadTest(){
         $.ajax({
-            url: "json/config.abecedario.json",
+            url: questionJsonFile,
             dataType: "json",
             async: false
         }).done(function(data){

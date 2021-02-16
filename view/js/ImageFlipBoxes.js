@@ -102,11 +102,14 @@ content.children().ready(function(){
 
     $("buttom.btn-test").click(function(){
         // primero llamar el script del test
-        $(this).attr("data-test");
-        //$.getScript("view/scripts/test.js");
+        questionJsonFile = $(this).attr("data-test");
+        $.ajax("view/pages/test/test1.php").done(function(response){
+            $("header").hide();
+            $("#myContent").html(response);
+            $.getScript("view/scripts/test.js");
+        });
         // al llamarlo le paso como parametro de la url el nombre del archivo
         // en el archivo del test deberia de recibirlo y pasarlo por parametro en la funcion
-
     });
 });
 

@@ -1,0 +1,20 @@
+[{
+    "typeTest": "img-select",
+    "answer": "img-amarillo",
+    "titleTest": "¿Cuál es el color amarillo?",
+    "images": [{
+        "name": "color-azul",
+        "value": "img-azul",
+        "file": "view/images/colores/azul.png"
+    },
+    {
+        "name": "color-rojo",
+        "value": "img-rojo",
+        "file": "view/images/colores/rojo.png"
+    },
+    {
+        "name": "color-amarillo",
+        "value": "img-amarillo",
+        "file": "view/images/colores/amarillo.png"
+    }]
+}]

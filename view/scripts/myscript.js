@@ -1,3 +1,4 @@
+var questionJsonFile;
 $(document).ready(function()
 {
     $(".navbar ul li a, .btn-learn, .btn-dictionary").click(function(e) {

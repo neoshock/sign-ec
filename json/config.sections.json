@@ -3,6 +3,7 @@
         "box_color": "warning",
         "image": "view/images/lds-numero.png",
         "data_study": "json/config.accordion.numbers.json",
+        "data_test": "json/config.questions.numbers.json",
         "front": 
         {
             "title": "Números",
@@ -18,7 +19,7 @@
         "box_color": "warning",
         "image": "view/images/lds-abecedario.png",
         "data_study": "json/config.accordion.abecedary.json",
-        "data_test": "json/config.abecedario.json",
+        "data_test": "json/config.questions.abecedary.json",
         "front": 
         {
             "title": "Abecedario",
@@ -34,6 +35,7 @@
         "box_color": "warning",
         "image": "view/images/lds-amarillo.png",
         "data_study": "json/config.accordion.colors.json",
+        "data_test": "json/config.questions.colors.json",
         "front": 
         {
             "title": "Colores",

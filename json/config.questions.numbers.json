@@ -1,0 +1,26 @@
+[{
+    "typeTest": "img-select",
+    "answer": "img-1",
+    "titleTest": "¿Cuál es el número 1?",
+    "images": [{
+        "name": "número-1",
+        "value": "img-1",
+        "file": "view/images/numeros/uno.png"
+    },
+    {
+        "name": "número-2",
+        "value": "img-2",
+        "file": "view/images/numeros/dos.png"
+    },
+    {
+        "name": "número-3",
+        "value": "img-3",
+        "file": "view/images/numeros/tres.png"
+    },
+    {
+        "name": "número-4",
+        "value": "img-4",
+        "file": "view/images/numeros/cuatro.png"
+    }
+    ]
+}]

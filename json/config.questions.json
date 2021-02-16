@@ -1,9 +1,0 @@
-[
-    {
-        "section" : "numbers",
-        "typeQuestion" : "0",
-        "question" : "¿Qué opción corresponde a la imagen?",
-        "options" : ["Uno", "Dos", "Tres", "Cuatro"],
-        "answer" : "Dos"
-    }
-]
