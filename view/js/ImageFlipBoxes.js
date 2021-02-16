@@ -26,7 +26,7 @@ function buildImageFlipBoxes(urlJson)
                 html += '            <hr />';
                 html += '            <p>'+ obj.back.description +'</p>';
                 html += '            <buttom class="btn btn-danger btn-study" data-study="'+obj.data_study+'">Estudiar</buttom>';
-                html += '            <buttom class="btn btn-success btn-test data-test="'+obj.data_test+'">Lección</buttom>';
+                html += '            <buttom class="btn btn-success btn-test" data-test="'+obj.data_test+'">Lección</buttom>';
                 html += '        </div>';
                 html += '    </div>';
                 html += '</div>';
@@ -101,7 +101,12 @@ content.children().ready(function(){
     });
 
     $("buttom.btn-test").click(function(){
-        alert("Lección no disponible");
+        // primero llamar el script del test
+        $(this).attr("data-test");
+        //$.getScript("view/scripts/test.js");
+        // al llamarlo le paso como parametro de la url el nombre del archivo
+        // en el archivo del test deberia de recibirlo y pasarlo por parametro en la funcion
+
     });
 });
 
