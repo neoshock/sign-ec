@@ -1,0 +1,670 @@
+[{
+    "typeTest": "img-select",
+    "answer": "img-a",
+    "titleTest": "¿Cual es la letra A?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-o",
+        "value": "img-o",
+        "file": "view/images/abecedario/o.png"
+    },
+    {
+        "name": "letra-i",
+        "value": "img-i",
+        "file": "view/images/abecedario/i.png"
+    },
+    {
+        "name": "letra-e",
+        "value": "img-e",
+        "file": "view/images/abecedario/e.png"
+    }
+    ]
+},
+{
+    "typeTest": "select-answer",
+    "answer": "letra-i",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/i.png",
+    "options": [{
+        "title": "Letra I",
+        "name": "letra-i",
+        "value": "letra-i"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra A",
+        "name": "letra-a",
+        "value": "letra-a"
+    },
+    {
+        "title": "Letra E",
+        "name": "letra-e",
+        "value": "letra-e"
+    }
+    ]
+},
+{
+    "typeTest": "select-answer",
+    "answer": "letra-e",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/e.png",
+    "options": [{
+        "title": "Letra H",
+        "name": "letra-h",
+        "value": "letra-h"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra E",
+        "name": "letra-e",
+        "value": "letra-e"
+    },
+    {
+        "title": "Letra M",
+        "name": "letra-m",
+        "value": "letra-m"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-o",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/o.png",
+    "options": [{
+        "title": "Letra A",
+        "name": "letra-a",
+        "value": "letra-a"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra E",
+        "name": "letra-e",
+        "value": "letra-e"
+    },
+    {
+        "title": "Letra M",
+        "name": "letra-m",
+        "value": "letra-m"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-u",
+    "titleTest": "¿Cual es la letra U?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-u",
+        "value": "img-u",
+        "file": "view/images/abecedario/u.png"
+    },
+    {
+        "name": "letra-i",
+        "value": "img-i",
+        "file": "view/images/abecedario/i.png"
+    },
+    {
+        "name": "letra-e",
+        "value": "img-e",
+        "file": "view/images/abecedario/e.png"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-m",
+    "titleTest": "¿Cual es la letra M?",
+    "images": [{
+        "name": "letra-h",
+        "value": "img-h",
+        "file": "view/images/abecedario/h.png"
+    },
+    {
+        "name": "letra-m",
+        "value": "img-m",
+        "file": "view/images/abecedario/m.png"
+    },
+    {
+        "name": "letra-c",
+        "value": "img-c",
+        "file": "view/images/abecedario/c.png"
+    },
+    {
+        "name": "letra-t",
+        "value": "img-t",
+        "file": "view/images/abecedario/t.png"
+    }
+    ]
+},
+{
+    "typeTest": "img-select",
+    "answer": "img-l",
+    "titleTest": "¿Cual es la letra L?",
+    "images": [{
+        "name": "letra-c",
+        "value": "img-c",
+        "file": "view/images/abecedario/c.png"
+    },
+    {
+        "name": "letra-m",
+        "value": "img-m",
+        "file": "view/images/abecedario/m.png"
+    },
+    {
+        "name": "letra-l",
+        "value": "img-l",
+        "file": "view/images/abecedario/l.png"
+    },
+    {
+        "name": "letra-z",
+        "value": "img-z",
+        "file": "view/images/abecedario/z.png"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-b",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/b.png",
+    "options": [{
+        "title": "Letra H",
+        "name": "letra-h",
+        "value": "letra-h"
+    },
+    {
+        "title": "Letra B",
+        "name": "letra-b",
+        "value": "letra-b"
+    },
+    {
+        "title": "Letra C",
+        "name": "letra-c",
+        "value": "letra-c"
+    },
+    {
+        "title": "Letra M",
+        "name": "letra-m",
+        "value": "letra-m"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-c",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/c.png",
+    "options": [{
+        "title": "Letra H",
+        "name": "letra-h",
+        "value": "letra-h"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra C",
+        "name": "letra-c",
+        "value": "letra-c"
+    },
+    {
+        "title": "Letra I",
+        "name": "letra-i",
+        "value": "letra-i"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-k",
+    "titleTest": "¿Cual es la letra K?",
+    "images": [{
+        "name": "letra-m",
+        "value": "img-m",
+        "file": "view/images/abecedario/m.png"
+    },
+    {
+        "name": "letra-k",
+        "value": "img-k",
+        "file": "view/images/abecedario/k.png"
+    },
+    {
+        "name": "letra-c",
+        "value": "img-c",
+        "file": "view/images/abecedario/c.png"
+    },
+    {
+        "name": "letra-p",
+        "value": "img-p",
+        "file": "view/images/abecedario/p.png"
+    }
+    ]
+},
+{
+    "typeTest": "img-select",
+    "answer": "img-p",
+    "titleTest": "¿Cual es la letra P?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-p",
+        "value": "img-p",
+        "file": "view/images/abecedario/p.png"
+    },
+    {
+        "name": "letra-u",
+        "value": "img-u",
+        "file": "view/images/abecedario/u.png"
+    },
+    {
+        "name": "letra-z",
+        "value": "img-z",
+        "file": "view/images/abecedario/z.png"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-t",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/t.png",
+    "options": [{
+        "title": "Letra H",
+        "name": "letra-h",
+        "value": "letra-h"
+    },
+    {
+        "title": "Letra B",
+        "name": "letra-b",
+        "value": "letra-b"
+    },
+    {
+        "title": "Letra T",
+        "name": "letra-t",
+        "value": "letra-t"
+    },
+    {
+        "title": "Letra N",
+        "name": "letra-n",
+        "value": "letra-n"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-n",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/n.png",
+    "options": [{
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra N",
+        "name": "letra-n",
+        "value": "letra-n"
+    },
+    {
+        "title": "Letra C",
+        "name": "letra-c",
+        "value": "letra-c"
+    },
+    {
+        "title": "Letra H",
+        "name": "letra-h",
+        "value": "letra-h"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-f",
+    "titleTest": "¿Cual es la letra F?",
+    "images": [{
+        "name": "letra-h",
+        "value": "img-h",
+        "file": "view/images/abecedario/h.png"
+    },
+    {
+        "name": "letra-g",
+        "value": "img-g",
+        "file": "view/images/abecedario/g.png"
+    },
+    {
+        "name": "letra-f",
+        "value": "img-f",
+        "file": "view/images/abecedario/f.png"
+    },
+    {
+        "name": "letra-c",
+        "value": "img-c",
+        "file": "view/images/abecedario/c.png"
+    }
+    ]
+},
+{
+    "typeTest": "img-select",
+    "answer": "img-j",
+    "titleTest": "¿Cual es la letra J?",
+    "images": [{
+        "name": "letra-c",
+        "value": "img-c",
+        "file": "view/images/abecedario/c.png"
+    },
+    {
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-j",
+        "value": "img-j",
+        "file": "view/images/abecedario/j.png"
+    },
+    {
+        "name": "letra-c",
+        "value": "img-c",
+        "file": "view/images/abecedario/c.png"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-r",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/r.png",
+    "options": [{
+        "title": "Letra H",
+        "name": "letra-h",
+        "value": "letra-h"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra R",
+        "name": "letra-r",
+        "value": "letra-r"
+    },
+    {
+        "title": "Letra N",
+        "name": "letra-n",
+        "value": "letra-n"
+    }
+    ]
+},{
+    "typeTest": "select-answer",
+    "answer": "letra-g",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/g.png",
+    "options": [{
+        "title": "Letra G",
+        "name": "letra-g",
+        "value": "letra-g"
+    },
+    {
+        "title": "Letra M",
+        "name": "letra-m",
+        "value": "letra-m"
+    },
+    {
+        "title": "Letra I",
+        "name": "letra-i",
+        "value": "letra-i"
+    },
+    {
+        "title": "Letra Z",
+        "name": "letra-z",
+        "value": "letra-z"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-z",
+    "titleTest": "¿Cual es la letra Z?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-z",
+        "value": "img-z",
+        "file": "view/images/abecedario/z.png"
+    },
+    {
+        "name": "letra-m",
+        "value": "img-m",
+        "file": "view/images/abecedario/m.png"
+    },
+    {
+        "name": "letra-e",
+        "value": "img-e",
+        "file": "view/images/abecedario/e.png"
+    }
+    ]
+},
+{
+    "typeTest": "select-answer",
+    "answer": "letra-q",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/q.png",
+    "options": [{
+        "title": "Letra I",
+        "name": "letra-i",
+        "value": "letra-i"
+    },
+    {
+        "title": "Letra Q",
+        "name": "letra-q",
+        "value": "letra-q"
+    },
+    {
+        "title": "Letra B",
+        "name": "letra-b",
+        "value": "letra-b"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    }
+    ]
+},
+{
+    "typeTest": "select-answer",
+    "answer": "letra-d",
+    "titleTest": "Seleccione la respuesta correcta",
+    "fileImg": "view/images/abecedario/d.png",
+    "options": [{
+        "title": "Letra D",
+        "name": "letra-d",
+        "value": "letra-d"
+    },
+    {
+        "title": "Letra O",
+        "name": "letra-o",
+        "value": "letra-o"
+    },
+    {
+        "title": "Letra A",
+        "name": "letra-a",
+        "value": "letra-a"
+    },
+    {
+        "title": "Letra N",
+        "name": "letra-n",
+        "value": "letra-n"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-h",
+    "titleTest": "¿Cual es la letra H?",
+    "images": [{
+        "name": "letra-z",
+        "value": "img-z",
+        "file": "view/images/abecedario/z.png"
+    },
+    {
+        "name": "letra-r",
+        "value": "img-r",
+        "file": "view/images/abecedario/r.png"
+    },
+    {
+        "name": "letra-e",
+        "value": "img-e",
+        "file": "view/images/abecedario/e.png"
+    },
+    {
+        "name": "letra-h",
+        "value": "img-h",
+        "file": "view/images/abecedario/h.png"
+    }
+    ]
+},
+{
+    "typeTest": "img-select",
+    "answer": "img-s",
+    "titleTest": "¿Cual es la letra S?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-s",
+        "value": "img-s",
+        "file": "view/images/abecedario/s.png"
+    },
+    {
+        "name": "letra-b",
+        "value": "img-b",
+        "file": "view/images/abecedario/b.png"
+    },
+    {
+        "name": "letra-j",
+        "value": "img-j",
+        "file": "view/images/abecedario/j.png"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-v",
+    "titleTest": "¿Cual es la letra V?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-v",
+        "value": "img-v",
+        "file": "view/images/abecedario/v.png"
+    },
+    {
+        "name": "letra-s",
+        "value": "img-s",
+        "file": "view/images/abecedario/s.png"
+    },
+    {
+        "name": "letra-w",
+        "value": "img-w",
+        "file": "view/images/abecedario/s.png"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-w",
+    "titleTest": "¿Cual es la letra W?",
+    "images": [{
+        "name": "letra-w",
+        "value": "img-w",
+        "file": "view/images/abecedario/w.png"
+    },
+    {
+        "name": "letra-s",
+        "value": "img-s",
+        "file": "view/images/abecedario/s.png"
+    },
+    {
+        "name": "letra-h",
+        "value": "img-h",
+        "file": "view/images/abecedario/h.png"
+    },
+    {
+        "name": "letra-l",
+        "value": "img-l",
+        "file": "view/images/abecedario/l.png"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-y",
+    "titleTest": "¿Cual es la letra Y?",
+    "images": [{
+        "name": "letra-y",
+        "value": "img-y",
+        "file": "view/images/abecedario/y.png"
+    },
+    {
+        "name": "letra-s",
+        "value": "img-s",
+        "file": "view/images/abecedario/s.png"
+    },
+    {
+        "name": "letra-k",
+        "value": "img-k",
+        "file": "view/images/abecedario/k.png"
+    },
+    {
+        "name": "letra-t",
+        "value": "img-t",
+        "file": "view/images/abecedario/t.png"
+    }
+    ]
+},{
+    "typeTest": "img-select",
+    "answer": "img-x",
+    "titleTest": "¿Cual es la letra X?",
+    "images": [{
+        "name": "letra-a",
+        "value": "img-a",
+        "file": "view/images/abecedario/a.png"
+    },
+    {
+        "name": "letra-s",
+        "value": "img-s",
+        "file": "view/images/abecedario/s.png"
+    },
+    {
+        "name": "letra-x",
+        "value": "img-x",
+        "file": "view/images/abecedario/x.png"
+    },
+    {
+        "name": "letra-r",
+        "value": "img-r",
+        "file": "view/images/abecedario/r.png"
+    }
+    ]
+}]
