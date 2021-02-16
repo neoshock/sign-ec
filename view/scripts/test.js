@@ -1,14 +1,21 @@
 var theTestContent;
 var theTestLenght;
 var correctAnswer;
-var progress = document.getElementById('progress-bar');
+var progress;
 var currentProgress = 0;
 var currentInterval = 0;
 var onIndex = 0;
 var onConfig = "";
 
     function inicializador (){
-        console.log("La clase ha sido instanciada");
+        theTestContent = null;
+        theTestLenght = null;
+        correctAnswer = null;
+        progress = document.getElementById('progress-bar');
+        currentProgress = 0;
+        currentInterval = 0;
+        onIndex = 0;
+        onConfig = "";
     }
 
     function insertTest(config) {
