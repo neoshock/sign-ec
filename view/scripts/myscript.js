@@ -3,6 +3,7 @@ $(document).ready(function()
 {
     //Poner puntaje en localStorage
     var points = $("#points");
+    $('.hiden-element').hide();
     //llamar localStorage
     function callPoints(){
         if(localStorage.length > 0){

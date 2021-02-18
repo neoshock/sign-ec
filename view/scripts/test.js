@@ -284,7 +284,7 @@ var onAnswer;
             $(".win-container").fadeIn(1000);
             audio.play();
             $('.win-container #nextState').on('click', function(){
-                $("[href='test1']").trigger("click");
+                $("[href='progressExp']").trigger("click");
             }); 
             setPointsLocalStorage();
         },1000);
@@ -309,7 +309,6 @@ var onAnswer;
 
 
 $('#test').ready(function(){
-    console.log('se hace la llamada');
     const testContent = document.getElementById('testContent');
     var dataTestConfig;
     var mainTest;

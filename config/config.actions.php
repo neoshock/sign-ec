@@ -12,7 +12,7 @@ $get_actions = [
         "script" => "view/pages/dictionary/script.js"
     ],
     [
-        "action" => "test1", 
+        "action" => "progressExp", 
         "view" => "view/pages/test/progress.php",
         "script" => "view/scripts/progressCircle.js"
     ]
