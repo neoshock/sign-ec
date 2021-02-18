@@ -241,6 +241,15 @@
     margin: 3px 15px;
 }
 
+.continue {
+    width: 25%;
+    margin: 30px auto;
+}
+
+.continue .btn {
+    
+}
+
 @keyframes animateText {
     0%{
         box-shadow: 1px 1px rgb(0, 255, 85);

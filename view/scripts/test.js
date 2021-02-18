@@ -259,8 +259,10 @@ var onConfig = "";
         $('#test .container').fadeOut(500);
         var theTest = document.getElementById('test');
         var audio = document.createElement('audio');
+        var divButton = document.createElement('div');
         audio.setAttribute("src","files/sounds/Win-Sound.wav");
 
+        let buttonNext = `<button id="nextState" class="btn btn-secondary fs-4">Continuar</button>`;
         let divFather = document.createElement('div');
         let character = document.createElement('div');
         let winText = document.createElement('div');
@@ -268,15 +270,21 @@ var onConfig = "";
         divFather.classList.add('win-container');
         character.classList.add("character");
         winText.classList.add("win-screen");
+        divButton.classList.add('continue');
         
+        divButton.innerHTML = buttonNext;
         winText.innerHTML = "Felicitaciones";
         divFather.appendChild(character);
         divFather.appendChild(winText);
+        divFather.appendChild(divButton);
         theTest.appendChild(divFather);
         $(".win-container").hide();
         setTimeout(function(){
             $(".win-container").fadeIn(1000);
             audio.play();
+            $('.win-container #nextState').on('click', function(){
+                $("[href='test1']").trigger("click");
+            }); 
             setPointsLocalStorage();
         },1000);
     }
