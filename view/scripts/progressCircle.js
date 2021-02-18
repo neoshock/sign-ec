@@ -8,7 +8,7 @@ $("#expWin").ready(function(){
         counter+=1;
         numb.textContent = counter + " EXP";
       }
-    }, 250);
+    }, 125);
 
     $("#returnLearn").on('click', function(){
         $("[href='learn']").trigger("click");

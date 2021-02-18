@@ -75,7 +75,7 @@
 }
 .circle .left .progress{
   z-index: 1;
-  animation: left 2s linear both;
+  animation: left 1s linear both;
 }
 @keyframes left {
   100%{
@@ -87,8 +87,8 @@
   transform: rotate(180deg);
 }
 .circle .right .progress{
-  animation: right 2s linear both;
-  animation-delay: 2s;
+  animation: right 1s linear both;
+  animation-delay: 1s;
 }
 @keyframes right {
   100%{
@@ -103,7 +103,7 @@
   width: 50%;
   height: 10px;
   margin-top: -5px;
-  animation: dot 4s linear both;
+  animation: dot 2s linear both;
   transform-origin: 0% 50%;
 }
 .circle .dot span {
