@@ -6,6 +6,7 @@ var currentProgress = 0;
 var currentInterval = 0;
 var onIndex = 0;
 var onConfig = "";
+var onAnswer;
 
     function inicializador (){
         theTestContent = null;
@@ -308,12 +309,12 @@ var onConfig = "";
 
 
 $('#test').ready(function(){
+    console.log('se hace la llamada');
     const testContent = document.getElementById('testContent');
     var dataTestConfig;
     var mainTest;
     var randomArray = [];
     var counter = 0;
-    var onAnswer = "";
 
     var nextButton = document.getElementById('next');
     var jumpButton = document.getElementById('jump');
@@ -326,6 +327,7 @@ $('#test').ready(function(){
             dataType: "json",
             async: false
         }).done(function(data){
+            onAnswer = null;
             dataTestConfig = data;
             theTestLenght = 10;  
             currentInterval = Math.floor(100 / theTestLenght) + 1;
@@ -368,7 +370,7 @@ $('#test').ready(function(){
     }
 
     function addEvents(){
-
+        nextButton.setAttribute("disabled","true");
         var boxContent = document.getElementById('box-images');
         var optionsContent = document.getElementById('box-options');
         var wordBox = document.getElementById('word-box');
@@ -379,6 +381,7 @@ $('#test').ready(function(){
             listElement.forEach(index => {
                 index.addEventListener("click", function(){
                     onAnswer = index.value;
+                    nextButton.removeAttribute("disabled");
                 });
             });
         }else if(optionsContent != null) {
@@ -386,6 +389,7 @@ $('#test').ready(function(){
             for (let i = 0; i< listElement.length; i++){
                 listElement[i].addEventListener("click", ()=>{
                     onAnswer = listElement[i].value;
+                    nextButton.removeAttribute("disabled");
                 });
             }
         }else if(wordBox != null){
