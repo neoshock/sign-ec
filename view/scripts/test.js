@@ -17,6 +17,7 @@ var onAnswer;
         currentInterval = 0;
         onIndex = 0;
         onConfig = "";
+        onAnswer = "";
     }
 
     function insertTest(config) {
@@ -179,6 +180,7 @@ var onAnswer;
             currentProgress += currentInterval;
             progress.toggleAttribute('aria-valuenow',`${currentProgress}`);
             progress.style.width = `${currentProgress}%`;
+            console.log(currentProgress);
             if(currentProgress > 100){
                 congratulationTest();
             }
@@ -306,6 +308,8 @@ var onAnswer;
         audioElement.play();
     }
 
+    inicializador();
+
 
 
 $('#test').ready(function(){
@@ -318,20 +322,18 @@ $('#test').ready(function(){
     var nextButton = document.getElementById('next');
     var jumpButton = document.getElementById('jump');
 
-    inicializador();
-
     function loadTest(){
         $.ajax({
             url: questionJsonFile,
             dataType: "json",
             async: false
         }).done(function(data){
-            onAnswer = null;
             dataTestConfig = data;
             theTestLenght = 10;  
             currentInterval = Math.floor(100 / theTestLenght) + 1;
         });
     }
+
     $("#exitLearn").on('click', ()=>{
         //codigo para redireccionar
         $("[href='learn']").trigger("click");

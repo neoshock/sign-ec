@@ -100,9 +100,13 @@ content.children().ready(function(){
         });
     });
 
-    $("buttom.btn-test").click(function(){
+    $("buttom.btn-test").click(function(e){
+        //evitar errores para que se ejecute dos veces
+        e.preventDefault();
+        e.stopImmediatePropagation();
         // primero llamar el script del test
         questionJsonFile = $(this).attr("data-test");
+        console.log('que pedo');
         $.ajax("view/pages/test/test1.php").done(function(response){
             $("header").hide(100);
             $("#myContent").html(response);
