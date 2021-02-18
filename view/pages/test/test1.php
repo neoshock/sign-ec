@@ -12,6 +12,9 @@
     <div class="container bg-light border rounded">
         <div class="row justify-content-center">
             <div class="col-md-12" id="progress">
+                <div class="btn-exit">
+                    <button id="exitLearn" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="progress w-75 mx-auto">
                     <div id="progress-bar" class="bg-info progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
                 </div>

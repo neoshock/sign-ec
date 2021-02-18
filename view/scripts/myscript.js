@@ -1,6 +1,20 @@
 var questionJsonFile;
 $(document).ready(function()
 {
+    //Poner puntaje en localStorage
+    var points = $("#points");
+    //llamar localStorage
+    function callPoints(){
+        if(localStorage.length > 0){
+            let number = localStorage.points;
+            points.html(number + ' exp');
+        }else{
+            localStorage.setItem("points","0");
+            points.html(0 + ' exp');
+        }
+    }
+    callPoints();
+
     $(".navbar ul li a, .btn-learn, .btn-dictionary").click(function(e) {
         e.preventDefault();
         var page = $(this).attr("href");

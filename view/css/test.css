@@ -3,6 +3,13 @@
     height: auto;
 }
 
+.btn-exit {
+    position: relative;
+    width: 5%;
+    top: 20px;
+    margin-left: 60px;
+}
+
 .test .container {
     transition: all 0.25s;
 }

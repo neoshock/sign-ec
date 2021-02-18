@@ -1,0 +1,35 @@
+.theProgress{
+    place-items: center;
+    text-align: center;
+}
+
+.circular {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: scale(2);
+}
+.circular .inner {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0px 0px -40px;
+    background-color: rgb(215, 250, 222);
+    border-radius: 100%;
+    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.circular .bar {
+    position: absolute;
+    height:  100%;
+    width: 100%;    
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px 100px, 100px, 50px);
+}

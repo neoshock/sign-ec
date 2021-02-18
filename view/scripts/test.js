@@ -277,7 +277,14 @@ var onConfig = "";
         setTimeout(function(){
             $(".win-container").fadeIn(1000);
             audio.play();
+            setPointsLocalStorage();
         },1000);
+    }
+
+    function setPointsLocalStorage(){
+        var points = parseInt(localStorage.points);
+        points = 15;
+        localStorage.points = parseInt(localStorage.points) + points;
     }
 
     function audioEvent(current){
@@ -312,10 +319,15 @@ $('#test').ready(function(){
             async: false
         }).done(function(data){
             dataTestConfig = data;
-            theTestLenght = 10;
+            theTestLenght = 10;  
             currentInterval = Math.floor(100 / theTestLenght) + 1;
         });
-    } 
+    }
+    $("#exitLearn").on('click', ()=>{
+        //codigo para redireccionar
+        $("[href='learn']").trigger("click");
+        $("header").show(100);
+    });
 
     function reloadTest(){
         if(onIndex < dataTestConfig.length){
