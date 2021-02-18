@@ -1,26 +1,55 @@
-[{
-    "typeTest": "img-select",
-    "answer": "img-1",
-    "titleTest": "¿Cuál es el número 1?",
-    "images": [{
-        "name": "número-1",
-        "value": "img-1",
-        "file": "view/images/numeros/uno.png"
+[
+    {
+        "typeTest": "img-select",
+        "answer": "img-1",
+        "titleTest": "¿Cuál es el número 1?",
+        "images": [{
+            "name": "número-1",
+            "value": "img-1",
+            "file": "view/images/numeros/uno.png"
+        },
+        {
+            "name": "número-2",
+            "value": "img-2",
+            "file": "view/images/numeros/dos.png"
+        },
+        {
+            "name": "número-3",
+            "value": "img-3",
+            "file": "view/images/numeros/tres.png"
+        },
+        {
+            "name": "número-4",
+            "value": "img-4",
+            "file": "view/images/numeros/cuatro.png"
+        }
+        ]
     },
     {
-        "name": "número-2",
-        "value": "img-2",
-        "file": "view/images/numeros/dos.png"
-    },
-    {
-        "name": "número-3",
-        "value": "img-3",
-        "file": "view/images/numeros/tres.png"
-    },
-    {
-        "name": "número-4",
-        "value": "img-4",
-        "file": "view/images/numeros/cuatro.png"
+        "typeTest": "select-answer",
+        "answer": "letra-i",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/dos.png",
+        "options": [{
+            "title": "Número 12",
+            "name": "number-i",
+            "value": "letra-i"
+        },
+        {
+            "title": "Letra O",
+            "name": "letra-o",
+            "value": "letra-o"
+        },
+        {
+            "title": "Letra A",
+            "name": "letra-a",
+            "value": "letra-a"
+        },
+        {
+            "title": "Letra E",
+            "name": "letra-e",
+            "value": "letra-e"
+        }
+        ]
     }
-    ]
-}]
+]

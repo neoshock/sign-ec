@@ -51,4 +51,3 @@ var showModalVideo = function(config)
     html += '</div>';
     return html;
 }
-

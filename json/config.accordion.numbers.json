@@ -1,6 +1,6 @@
 [
     {
-        "title": "Números 0, 1, 2 ... 9",
+        "title": "Números 1, 2 ... 10",
         "content": [
             {
                 "word": "Uno",
@@ -12,23 +12,119 @@
                 "word": "Dos",
                 "image": "view/images/numeros/dos.png",
                 "video": "https://www.youtube.com/embed/8CJ1b9A5v8w",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Tres",
+                "image": "view/images/numeros/tres.png",
+                "video": "https://www.youtube.com/embed/-YB8--WTls8",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Cuatro",
+                "image": "view/images/numeros/cuatro.png",
+                "video": "https://www.youtube.com/embed/a2EmVH64dm8",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Cinco",
+                "image": "view/images/numeros/cinco.png",
+                "video": "https://www.youtube.com/embed/-YB8--WTls8",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Seis",
+                "image": "view/images/numeros/seis.png",
+                "video": "https://www.youtube.com/embed/GXZTIIVxtwI",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Siete",
+                "image": "view/images/numeros/siete.png",
+                "video": "https://www.youtube.com/embed/weG0aIRnQaM",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Ocho",
+                "image": "view/images/numeros/ocho.png",
+                "video": "https://www.youtube.com/embed/JJXVkLrYaJY",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Nueve",
+                "image": "view/images/numeros/nueve.png",
+                "video": "https://www.youtube.com/embed/MPmOt5lb1wI",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Diez",
+                "image": "view/images/numeros/diez.png",
+                "video": "https://www.youtube.com/embed/LUJ6AsQo2Ho",
                 "description": "Como hacer los movimientos de las manos"
             }
         ]
     },
     {
-        "title": "Números 10, 11, 12 ... 19",
+        "title": "Números 11, 12, 13 ... 20",
         "content": [
             {
-                "word": "Uno",
-                "image": "view/images/numeros/uno.png",
-                "video": "https://www.youtube.com/embed/FF5JlbTsiqw",
+                "word": "Once",
+                "image": "view/images/numeros/once.png",
+                "video": "https://www.youtube.com/embed/otBYFa614qQ",
                 "description": "Como hacer los movimientos de las manos"
             },
             {
-                "word": "Dos",
-                "image": "view/images/numeros/dos.png",
-                "video": "https://www.youtube.com/embed/8CJ1b9A5v8w",
+                "word": "Doce",
+                "image": "view/images/numeros/doce.png",
+                "video": "https://www.youtube.com/embed/PgnIWpbiA0E",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Trece",
+                "image": "view/images/numeros/trece.png",
+                "video": "https://www.youtube.com/embed/PgnIWpbiA0E",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Catorce",
+                "image": "view/images/numeros/catorce.png",
+                "video": "https://www.youtube.com/embed/EDvWpfjlYOs",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Quince",
+                "image": "view/images/numeros/quince.png",
+                "video": "https://www.youtube.com/embed/V3QKVxcr9Kg",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Dieciséis",
+                "image": "view/images/numeros/dieciseis.png",
+                "video": "https://www.youtube.com/embed/X0T0Z7EIZl4",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Diecisiete",
+                "image": "view/images/numeros/diecisiete.png",
+                "video": "https://www.youtube.com/embed/qd_hIDA9Cdg",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Dieciocho",
+                "image": "view/images/numeros/dieciocho.png",
+                "video": "https://www.youtube.com/embed/Uch1G8_4nnw",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Diecinueve",
+                "image": "view/images/numeros/diecinueve.png",
+                "video": "https://www.youtube.com/embed/E-2yyjo5HwM",
+                "description": "Como hacer los movimientos de las manos"
+            },
+            {
+                "word": "Veinte",
+                "image": "view/images/numeros/veinte.png",
+                "video": "https://www.youtube.com/embed/Av7zzNTQEuU",
                 "description": "Como hacer los movimientos de las manos"
             }
         ]
