@@ -43,7 +43,6 @@ var content = $("#myContent");
 
 content.html("").append(buildImageFlipBoxes("json/config.sections.json"));
 content.children().ready(function(){
-    console.log("cargado")
     /** Flip Boxes
      *********************** **/
     if($('.box-flip').length > 0) {
