@@ -106,7 +106,6 @@ content.children().ready(function(){
         e.stopImmediatePropagation();
         // primero llamar el script del test
         questionJsonFile = $(this).attr("data-test");
-        console.log('que pedo');
         $.ajax("view/pages/test/test1.php").done(function(response){
             $("header").hide(100);
             $("#myContent").html(response);
