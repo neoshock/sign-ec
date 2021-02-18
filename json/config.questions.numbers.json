@@ -1,55 +1,514 @@
 [
     {
         "typeTest": "img-select",
-        "answer": "img-1",
+        "answer": "número-1",
         "titleTest": "¿Cuál es el número 1?",
         "images": [{
             "name": "número-1",
-            "value": "img-1",
+            "value": "número-1",
             "file": "view/images/numeros/uno.png"
         },
         {
             "name": "número-2",
-            "value": "img-2",
+            "value": "número-2",
             "file": "view/images/numeros/dos.png"
         },
         {
             "name": "número-3",
-            "value": "img-3",
+            "value": "número-3",
             "file": "view/images/numeros/tres.png"
         },
         {
             "name": "número-4",
-            "value": "img-4",
+            "value": "número-4",
             "file": "view/images/numeros/cuatro.png"
         }
         ]
     },
     {
         "typeTest": "select-answer",
-        "answer": "letra-i",
+        "answer": "número-2",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/numeros/dos.png",
         "options": [{
             "title": "Número 12",
-            "name": "number-i",
-            "value": "letra-i"
+            "name": "número-12",
+            "value": "número-12"
         },
         {
-            "title": "Letra O",
-            "name": "letra-o",
-            "value": "letra-o"
+            "title": "Número 2",
+            "name": "número-2",
+            "value": "número-2"
         },
         {
-            "title": "Letra A",
-            "name": "letra-a",
-            "value": "letra-a"
+            "title": "Número 14",
+            "name": "número-14",
+            "value": "número-14"
         },
         {
-            "title": "Letra E",
-            "name": "letra-e",
-            "value": "letra-e"
+            "title": "Número 11",
+            "name": "número-11",
+            "value": "número-11"
         }
         ]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-3",
+        "titleTest": "¿Cuál es el número 3?",
+        "images": [{
+            "name": "número-13",
+            "value": "número-13",
+            "file": "view/images/numeros/trece.png"
+        },
+        {
+            "name": "número-15",
+            "value": "número-15",
+            "file": "view/images/numeros/quince.png"
+        },
+        {
+            "name": "número-3",
+            "value": "número-3",
+            "file": "view/images/numeros/tres.png"
+        },
+        {
+            "name": "número-20",
+            "value": "número-20",
+            "file": "view/images/numeros/veinte.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-4",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/cuatro.png",
+        "options": [{
+            "title": "Número 2",
+            "name": "número-2",
+            "value": "número-2"
+        },
+        {
+            "title": "Número 12",
+            "name": "número-12",
+            "value": "número-12"
+        },
+        {
+            "title": "Número 14",
+            "name": "número-14",
+            "value": "número-14"
+        },
+        {
+            "title": "Número 4",
+            "name": "número-4",
+            "value": "número-4"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-5",
+        "titleTest": "¿Cuál es el número 5?",
+        "images": [{
+            "name": "número-5",
+            "value": "número-5",
+            "file": "view/images/numeros/cinco.png"
+        },
+        {
+            "name": "número-14",
+            "value": "número-14",
+            "file": "view/images/numeros/catorce.png"
+        },
+        {
+            "name": "número-15",
+            "value": "número-15",
+            "file": "view/images/numeros/quince.png"
+        },
+        {
+            "name": "número-19",
+            "value": "número-19",
+            "file": "view/images/numeros/diecinueve.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-6",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/seis.png",
+        "options": [{
+            "title": "Número 6",
+            "name": "número-6",
+            "value": "número-6"
+        },
+        {
+            "title": "Número 7",
+            "name": "número-7",
+            "value": "número-7"
+        },
+        {
+            "title": "Número 10",
+            "name": "número-10",
+            "value": "número-10"
+        },
+        {
+            "title": "Número 2",
+            "name": "número-2",
+            "value": "número-2"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-7",
+        "titleTest": "¿Cuál es el número 7?",
+        "images": [{
+            "name": "número-5",
+            "value": "número-5",
+            "file": "view/images/numeros/cinco.png"
+        },
+        {
+            "name": "número-8",
+            "value": "número-8",
+            "file": "view/images/numeros/ocho.png"
+        },
+        {
+            "name": "número-7",
+            "value": "número-7",
+            "file": "view/images/numeros/siete.png"
+        },
+        {
+            "name": "número-1",
+            "value": "número-1",
+            "file": "view/images/numeros/uno.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-8",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/ocho.png",
+        "options": [{
+            "title": "Número 5",
+            "name": "número-5",
+            "value": "número-5"
+        },
+        {
+            "title": "Número 3",
+            "name": "número-3",
+            "value": "número-3"
+        },
+        {
+            "title": "Número 8",
+            "name": "número-8",
+            "value": "número-8"
+        },
+        {
+            "title": "Número 9",
+            "name": "número-9",
+            "value": "número-9"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-9",
+        "titleTest": "¿Cuál es el número 9?",
+        "images": [{
+            "name": "número-3",
+            "value": "número-3",
+            "file": "view/images/numeros/tres.png"
+        },
+        {
+            "name": "número-18",
+            "value": "número-18",
+            "file": "view/images/numeros/dieciocho.png"
+        },
+        {
+            "name": "número-19",
+            "value": "número-19",
+            "file": "view/images/numeros/diecinueve.png"
+        },
+        {
+            "name": "número-9",
+            "value": "número-9",
+            "file": "view/images/numeros/nueve.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-10",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/diez.png",
+        "options": [{
+            "title": "Número 11",
+            "name": "número-11",
+            "value": "número-11"
+        },
+        {
+            "title": "Número 10",
+            "name": "número-10",
+            "value": "número-10"
+        },
+        {
+            "title": "Número 14",
+            "name": "número-14",
+            "value": "número-14"
+        },
+        {
+            "title": "Número 16",
+            "name": "número-16",
+            "value": "número-16"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-11",
+        "titleTest": "¿Cuál es el número 11?",
+        "images": [{
+            "name": "número-11",
+            "value": "número-11",
+            "file": "view/images/numeros/once.png"
+        },
+        {
+            "name": "número-1",
+            "value": "número-1",
+            "file": "view/images/numeros/uno.png"
+        },
+        {
+            "name": "número-7",
+            "value": "número-7",
+            "file": "view/images/numeros/siete.png"
+        },
+        {
+            "name": "número-17",
+            "value": "número-17",
+            "file": "view/images/numeros/diecisiete.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-12",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/doce.png",
+        "options": [{
+            "title": "Número 11",
+            "name": "número-11",
+            "value": "número-11"
+        },
+        {
+            "title": "Número 10",
+            "name": "número-10",
+            "value": "número-10"
+        },
+        {
+            "title": "Número 12",
+            "name": "número-12",
+            "value": "número-12"
+        },
+        {
+            "title": "Número 2",
+            "name": "número-2",
+            "value": "número-2"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-13",
+        "titleTest": "¿Cuál es el número 13?",
+        "images": [{
+            "name": "número-14",
+            "value": "número-14",
+            "file": "view/images/numeros/catorce.png"
+        },
+        {
+            "name": "número-3",
+            "value": "número-3",
+            "file": "view/images/numeros/tres.png"
+        },
+        {
+            "name": "número-13",
+            "value": "número-13",
+            "file": "view/images/numeros/trece.png"
+        },
+        {
+            "name": "número-20",
+            "value": "número-20",
+            "file": "view/images/numeros/veinte.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-14",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/catorce.png",
+        "options": [{
+            "title": "Número 14",
+            "name": "número-14",
+            "value": "número-14"
+        },
+        {
+            "title": "Número 11",
+            "name": "número-11",
+            "value": "número-11"
+        },
+        {
+            "title": "Número 4",
+            "name": "número-4",
+            "value": "número-4"
+        },
+        {
+            "title": "Número 10",
+            "name": "número-10",
+            "value": "número-10"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-15",
+        "titleTest": "¿Cuál es el número 15?",
+        "images": [{
+            "name": "número-13",
+            "value": "número-13",
+            "file": "view/images/numeros/trece.png"
+        },
+        {
+            "name": "número-17",
+            "value": "número-17",
+            "file": "view/images/numeros/diecisiete.png"
+        },
+        {
+            "name": "número-20",
+            "value": "número-20",
+            "file": "view/images/numeros/veinte.png"
+        },
+        {
+            "name": "número-15",
+            "value": "número-15",
+            "file": "view/images/numeros/quince.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-16",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/dieciseis.png",
+        "options": [{
+            "title": "Número 6",
+            "name": "número-6",
+            "value": "número-6"
+        },
+        {
+            "title": "Número 16",
+            "name": "número-16",
+            "value": "número-16"
+        },
+        {
+            "title": "Número 18",
+            "name": "número-18",
+            "value": "número-18"
+        },
+        {
+            "title": "Número 4",
+            "name": "número-4",
+            "value": "número-4"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-18",
+        "titleTest": "¿Cuál es el número 18?",
+        "images": [{
+            "name": "número-11",
+            "value": "número-11",
+            "file": "view/images/numeros/once.png"
+        },
+        {
+            "name": "número-17",
+            "value": "número-17",
+            "file": "view/images/numeros/diecisiete.png"
+        },
+        {
+            "name": "número-8",
+            "value": "número-8",
+            "file": "view/images/numeros/ocho.png"
+        },
+        {
+            "name": "número-18",
+            "value": "número-18",
+            "file": "view/images/numeros/dieciocho.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-17",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/diecisiete.png",
+        "options": [{
+            "title": "Número 7",
+            "name": "número-7",
+            "value": "número-7"
+        },
+        {
+            "title": "Número 19",
+            "name": "número-19",
+            "value": "número-19"
+        },
+        {
+            "title": "Número 18",
+            "name": "número-18",
+            "value": "número-18"
+        },
+        {
+            "title": "Número 17",
+            "name": "número-17",
+            "value": "número-17"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "número-19",
+        "titleTest": "¿Cuál es el número 19?",
+        "images": [{
+            "name": "número-19",
+            "value": "número-19",
+            "file": "view/images/numeros/diecinueve.png"
+        },
+        {
+            "name": "número-20",
+            "value": "número-20",
+            "file": "view/images/numeros/veinte.png"
+        },
+        {
+            "name": "número-9",
+            "value": "número-9",
+            "file": "view/images/numeros/nueve.png"
+        },
+        {
+            "name": "número-18",
+            "value": "número-18",
+            "file": "view/images/numeros/dieciocho.png"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "número-20",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/numeros/veinte.png",
+        "options": [{
+            "title": "Número 2",
+            "name": "número-2",
+            "value": "número-2"
+        },
+        {
+            "title": "Número 20",
+            "name": "número-20",
+            "value": "número-20"
+        },
+        {
+            "title": "Número 15",
+            "name": "número-15",
+            "value": "número-15"
+        },
+        {
+            "title": "Número 12",
+            "name": "número-12",
+            "value": "número-12"
+        }]
     }
 ]

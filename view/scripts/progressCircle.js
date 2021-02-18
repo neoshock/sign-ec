@@ -14,4 +14,5 @@ $("#expWin").ready(function(){
         $("[href='learn']").trigger("click");
         $("header").show(100);
     });
+    callPoints();
 });

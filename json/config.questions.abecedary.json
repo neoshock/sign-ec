@@ -1,7 +1,7 @@
 [{
     "typeTest": "img-select",
     "answer": "img-a",
-    "titleTest": "¿Cual es la letra A?",
+    "titleTest": "¿Cuál es la letra A?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",
@@ -106,7 +106,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-u",
-    "titleTest": "¿Cual es la letra U?",
+    "titleTest": "¿Cuál es la letra U?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",
@@ -131,7 +131,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-m",
-    "titleTest": "¿Cual es la letra M?",
+    "titleTest": "¿Cuál es la letra M?",
     "images": [{
         "name": "letra-h",
         "value": "img-h",
@@ -157,7 +157,7 @@
 {
     "typeTest": "img-select",
     "answer": "img-l",
-    "titleTest": "¿Cual es la letra L?",
+    "titleTest": "¿Cuál es la letra L?",
     "images": [{
         "name": "letra-c",
         "value": "img-c",
@@ -234,7 +234,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-k",
-    "titleTest": "¿Cual es la letra K?",
+    "titleTest": "¿Cuál es la letra K?",
     "images": [{
         "name": "letra-m",
         "value": "img-m",
@@ -260,7 +260,7 @@
 {
     "typeTest": "img-select",
     "answer": "img-p",
-    "titleTest": "¿Cual es la letra P?",
+    "titleTest": "¿Cuál es la letra P?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",
@@ -337,7 +337,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-f",
-    "titleTest": "¿Cual es la letra F?",
+    "titleTest": "¿Cuál es la letra F?",
     "images": [{
         "name": "letra-h",
         "value": "img-h",
@@ -363,7 +363,7 @@
 {
     "typeTest": "img-select",
     "answer": "img-j",
-    "titleTest": "¿Cual es la letra J?",
+    "titleTest": "¿Cuál es la letra J?",
     "images": [{
         "name": "letra-c",
         "value": "img-c",
@@ -440,7 +440,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-z",
-    "titleTest": "¿Cual es la letra Z?",
+    "titleTest": "¿Cuál es la letra Z?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",
@@ -519,7 +519,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-h",
-    "titleTest": "¿Cual es la letra H?",
+    "titleTest": "¿Cuál es la letra H?",
     "images": [{
         "name": "letra-z",
         "value": "img-z",
@@ -545,7 +545,7 @@
 {
     "typeTest": "img-select",
     "answer": "img-s",
-    "titleTest": "¿Cual es la letra S?",
+    "titleTest": "¿Cuál es la letra S?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",
@@ -570,7 +570,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-v",
-    "titleTest": "¿Cual es la letra V?",
+    "titleTest": "¿Cuál es la letra V?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",
@@ -595,7 +595,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-w",
-    "titleTest": "¿Cual es la letra W?",
+    "titleTest": "¿Cuál es la letra W?",
     "images": [{
         "name": "letra-w",
         "value": "img-w",
@@ -620,7 +620,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-y",
-    "titleTest": "¿Cual es la letra Y?",
+    "titleTest": "¿Cuál es la letra Y?",
     "images": [{
         "name": "letra-y",
         "value": "img-y",
@@ -645,7 +645,7 @@
 },{
     "typeTest": "img-select",
     "answer": "img-x",
-    "titleTest": "¿Cual es la letra X?",
+    "titleTest": "¿Cuál es la letra X?",
     "images": [{
         "name": "letra-a",
         "value": "img-a",

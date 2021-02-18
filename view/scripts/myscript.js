@@ -1,19 +1,19 @@
 var questionJsonFile;
+//Poner puntaje en localStorage
+var points = $("#points");
+$('.hiden-element').hide();
+//llamar localStorage
+function callPoints(){
+    if(localStorage.length > 0){
+        let number = localStorage.points;
+        points.html(number + ' exp');
+    }else{
+        localStorage.setItem("points","0");
+        points.html(0 + ' exp');
+    }
+}
 $(document).ready(function()
 {
-    //Poner puntaje en localStorage
-    var points = $("#points");
-    $('.hiden-element').hide();
-    //llamar localStorage
-    function callPoints(){
-        if(localStorage.length > 0){
-            let number = localStorage.points;
-            points.html(number + ' exp');
-        }else{
-            localStorage.setItem("points","0");
-            points.html(0 + ' exp');
-        }
-    }
     callPoints();
 
     $(".navbar ul li a, .btn-learn, .btn-dictionary").click(function(e) {
