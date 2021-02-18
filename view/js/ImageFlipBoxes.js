@@ -104,7 +104,7 @@ content.children().ready(function(){
         // primero llamar el script del test
         questionJsonFile = $(this).attr("data-test");
         $.ajax("view/pages/test/test1.php").done(function(response){
-            $("header").hide();
+            $("header").hide(100);
             $("#myContent").html(response);
             $.getScript("view/scripts/test.js");
         });

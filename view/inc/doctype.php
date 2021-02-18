@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="view/css/image-flip-boxes.css">
     <link rel="stylesheet" href="view/css/main.css">
     <link rel="stylesheet" href="view/css/test.css">
+    <link rel="stylesheet" href="view/css/progress.css">
     <title>SIGN EC</title>
 </head>
 <body>

@@ -13,7 +13,7 @@ $get_actions = [
     ],
     [
         "action" => "test1", 
-        "view" => "view/pages/test/test1.php",
-        "script" => "view/scripts/test.js"
+        "view" => "view/pages/test/progress.php",
+        "script" => "view/scripts/progressCircle.js"
     ]
 ];
