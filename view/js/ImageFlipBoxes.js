@@ -70,7 +70,7 @@ content.children().ready(function(){
     }
 
     $("buttom.btn-study").click(function(){
-        console.log("clic en " + $(this).attr("data-study"));
+        
         var json = $(this).attr("data-study");
         
         // cargar el nuevo contenido
