@@ -35,7 +35,7 @@
         "box_color": "warning",
         "image": "view/images/lds-frases-comunes.png",
         "data_study": "json/config.accordion.common.phrases.json",
-        "data_test": "json/config.questions.colors.json",
+        "data_test": "json/config.questions.common.phrases.json",
         "front": 
         {
             "title": "Frases Comunes",

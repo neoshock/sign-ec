@@ -1,0 +1,59 @@
+[
+    {
+        "typeTest": "select-answer",
+        "answer": "bahia",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/frases-comunes/bahia.png",
+        "options": [{
+            "title": "Vacuna",
+            "name": "vacuna",
+            "value": "vcuna"
+        },
+        {
+            "title": "Mono",
+            "name": "mono",
+            "value": "mono"
+        },
+        {
+            "title": "Galleta",
+            "name": "galleta",
+            "value": "galleta"
+        },
+        {
+            "title": "Bahía",
+            "name": "bahia",
+            "value": "bahia"
+        }
+        ]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "buenas noches",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "buenas-noches",
+                "file": "view/images/frases-comunes/buenas-noches.png"
+            }],
+        "wordOptions": [{
+            "title": "hola",
+            "name": "Hola",
+            "value": "hola"
+        },
+        {
+            "title": "como estas",
+            "name": "como estas",
+            "value": "como-estas"
+        },
+        {
+            "title": "buenas",
+            "name": "buenas",
+            "value": "buenas"
+        },
+        {
+            "title": "noches",
+            "name": "noches",
+            "value": "noches"
+        }
+        ]
+    }
+]
