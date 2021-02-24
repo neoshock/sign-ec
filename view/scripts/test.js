@@ -402,6 +402,7 @@ $('#test').ready(function(){
                         putContent(index,document.getElementById('word-box'));
                     }else{
                         putContent(index,document.getElementsByClassName('word-content'));
+                        nextButton.removeAttribute("disabled");
                     }
                     let wordContent = document.getElementsByClassName('word-content');
                     for (let i = 0; i< wordContent[0].childNodes.length; i++){
