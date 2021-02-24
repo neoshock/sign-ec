@@ -28,7 +28,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "buenas noches",
+        "answer": "buenas noches ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "buenas-noches",
