@@ -41,25 +41,18 @@ function buildImageFlipBoxes(urlJson)
 
 var content = $("#myContent");
 
-content.html("").append(buildImageFlipBoxes("json/config.sections.json"));
-content.children().ready(function(){
+content.html(buildImageFlipBoxes("json/config.sections.json")).ready(function(){
+    
     /** Flip Boxes
      *********************** **/
     if($('.box-flip').length > 0) {
         
         $('.box-flip').each(function() {
-            _height1 = $('.box1',this).outerHeight();
-            _height2 = $('.box2',this).outerHeight();
-
-            if(_height1 >= _height2) {
-                _height = _height1;
-            } else {
-                _height = _height2;
-            }
-
+            console.log(this)
+            _height = $('.box1', this).outerHeight();
+            
             $(this).css({"min-height":_height+"px"});
-            $('.box1',this).css({"min-height":_height+"px"});
-            $('.box2',this).css({"min-height":_height+"px"});
+            $('.box1, .box2').css({"min-height":_height+"px"});
         });
         
         $('.box-flip').hover(function() {

@@ -1,0 +1,3 @@
+servidor: ftpupload.net
+usuario: ottos_27995432
+contraseña: sj_f9dJL5tptpNY

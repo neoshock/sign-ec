@@ -33,18 +33,18 @@
     },
     {
         "box_color": "warning",
-        "image": "view/images/lds-amarillo.png",
-        "data_study": "json/config.accordion.colors.json",
+        "image": "view/images/lds-frases-comunes.png",
+        "data_study": "json/config.accordion.common.phrases.json",
         "data_test": "json/config.questions.colors.json",
         "front": 
         {
-            "title": "Colores",
-            "description": "La mano se dezplaza de adelante hacia atrás de la cabeza en forma ondulante."
+            "title": "Frases Comunes",
+            "description": "Las manos se desplazan hacia afuera. La lengua se mueve dentro de la boca."
         },
         "back":
         {
-            "title": "Colores",
-            "description": "Aprende los colores mas comunes en el lenguaje de señas, ordenados por categorías"
+            "title": "Frases Comunes",
+            "description": "Aprende las frases más comunes en el lenguaje de señas"
         }
     }
 ]

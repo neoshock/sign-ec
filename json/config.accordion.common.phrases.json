@@ -1,0 +1,132 @@
+[
+    {
+        "title": "Palabras comunes",
+        "content": [
+            {
+                "word": "Bahía",
+                "image": "view/images/frases-comunes/bahia.png",
+                "video": "https://www.youtube.com/embed/TiRmxsXsz74",
+                "description": "La mano se desplaza de afuera hacia adentro hasta el borde interno de la mano contraria y regresa"
+            },
+            {
+                "word": "Galleta",
+                "image": "view/images/frases-comunes/galleta.png",
+                "video": "https://www.youtube.com/embed/TGhtJKkp9rE",
+                "description": "La mano se acerca lentamente a la boca. Los dientes chasquean"
+            },
+            {
+                "word": "Mono",
+                "image": "view/images/frases-comunes/mono.png",
+                "video": "https://www.youtube.com/embed/4QvM-Tlngis",
+                "description": "Las manos rascan la frente y el abdomen. La lengua se pone atrás del mentón"
+            },
+            {
+                "word": "Página web",
+                "image": "view/images/frases-comunes/pagina-web.png",
+                "video": "https://www.youtube.com/embed/7tcsBm-RoDo",
+                "description": "La mano se desplaza en curva de adentro hacía afuera tres veces"
+            },
+            {
+                "word": "Vacuna",
+                "image": "view/images/frases-comunes/vacuna.png",
+                "video": "https://www.youtube.com/embed/EIVsHByjbC4",
+                "description": "La mano toca el brazo contrario de la mano"
+            }
+        ]
+    },
+    {
+        "title": "Saludos",
+        "content": [
+            {
+                "word": "Hola",
+                "image": "view/images/frases-comunes/hola.png",
+                "video": "https://www.youtube.com/embed/RjSDwwE7s9A",
+                "description": "La mano con los dedos juntos se abre y se cierran repetidas veces"
+            },
+            {
+                "word": "Buenas noches",
+                "image": "view/images/frases-comunes/buenas-noches.png",
+                "video": "https://www.youtube.com/embed/V34jgVmZbfg",
+                "description": "La mano en la frente se dezplaza hacia abajo, las manos abiertas desde la altura de los hombros se desplazan hacia el centro mientras simultáneamente se cierran"
+            },
+            {
+                "word": "Buenas tardes",
+                "image": "view/images/frases-comunes/buenas-tardes.png",
+                "video": "https://www.youtube.com/embed/Aqfe1Mjyi04",
+                "description": "La mano cerrada en la frente se desplaza en curva hacia bajo mientras se abre simultáneamente y se sienta sobre la muñeca de la mano contraría"
+            },
+            {
+                "word": "Buenos días",
+                "image": "view/images/frases-comunes/buenos-dias.png",
+                "video": "https://www.youtube.com/embed/sISbDkdcXY8",
+                "description": "La mano desde la frente se desplaza hacia abajo y después hacia arriba mientras se abre simultáneamente"
+            }
+        ]
+    },
+    {
+        "title": "Preguntas comunes",
+        "content": [
+            {
+                "word": "¿Comó llego?",
+                "image": "view/images/frases-comunes/como-llego.png",
+                "video": "https://www.youtube.com/embed/sO0s-MBsfSE",
+                "description": "La mano se dezplaza hacia adelante en forma ondulada"
+            },
+            {
+                "word": "¿Cuál?",
+                "image": "view/images/frases-comunes/cual.png",
+                "video": "https://www.youtube.com/embed/SSKlBHbEIJ8",
+                "description": "Las manos se mueven varias veces hacia arriba y abajo alternadamente. Los labios están en forma de beso abierto"
+            },
+            {
+                "word": "¿Cuál es el motivo?",
+                "image": "view/images/frases-comunes/cual-es-el-motivo.png",
+                "video": "https://www.youtube.com/embed/YkwHzHJ10VE",
+                "description": "La mano toca dos veces el dorso contrario y gira hacia afuera. El ceño se frucen y los labios estan estirados hacia adentro"
+            },
+            {
+                "word": "¿Cuándo?",
+                "image": "view/images/frases-comunes/cuando.png",
+                "video": "https://www.youtube.com/embed/BVYQn8Z8mQk",
+                "description": "El dedo índice dibuja un círculo de adelante hacia atrás sobre el índice de la mano contraría. La boca está en forma de beso abierto"
+            },
+            {
+                "word": "¿Cuánto cuenta?",
+                "image": "view/images/frases-comunes/cuanto-cuesta.png",
+                "video": "https://www.youtube.com/embed/qPAhpZIgVwI",
+                "description": "Los dedos se frotan. La boca está cerrada con los labios hacía afuera"
+            },
+            {
+                "word": "¿Para qué?",
+                "image": "view/images/frases-comunes/para-que.png",
+                "video": "https://www.youtube.com/embed/jyTL1jEYIYo",
+                "description": "Las manos bajan dos veces. El ceño se frucen, los dientes muerden el labio inferior"
+            },
+            {
+                "word": "¿Por qué?",
+                "image": "view/images/frases-comunes/por-que.png",
+                "video": "https://www.youtube.com/embed/PyjSGz1CGFM",
+                "description": "El dedo medio toca la frente y se desplaza hacía afuera"
+            },
+            {
+                "word": "¿Qué tal?",
+                "image": "view/images/frases-comunes/que-tal.png",
+                "video": "https://www.youtube.com/embed/gr4wOlOs4t4",
+                "description": "El dedo toca el pómulo, luego la mano se desplaza hacía afuera"
+            },
+            {
+                "word": "¿Qué hora es?",
+                "image": "view/images/frases-comunes/que-hora-es.png",
+                "video": "https://www.youtube.com/embed/8qo7Qgt_5tM",
+                "description": "El dedo toca dos veces la muñeca de la mano contraria"
+            },
+            {
+                "word": "¿Qué me cuentas?",
+                "image": "view/images/frases-comunes/que-me-cuentas.png",
+                "video": "https://www.youtube.com/embed/Wt1qJdCRBfo",
+                "description": "La mano toca el mentón dos veces. Se ven los dientes juntos"
+            }
+        ]
+    }
+]
+
