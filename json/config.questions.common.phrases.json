@@ -1,7 +1,7 @@
 [
     {
         "typeTest": "select-answer",
-        "answer": "bahia",
+        "answer": "Bahía",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/bahia.png",
         "options": [{
@@ -22,13 +22,13 @@
         {
             "title": "Bahía",
             "name": "bahia",
-            "value": "bahia"
+            "value": "Bahía"
         }
         ]
     },
     {
         "typeTest": "words-select",
-        "answer": "buenas noches ",
+        "answer": "Buenas noches ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "buenas-noches",
@@ -45,9 +45,9 @@
             "value": "como-estas"
         },
         {
-            "title": "buenas",
+            "title": "Buenas",
             "name": "buenas",
-            "value": "buenas"
+            "value": "Buenas"
         },
         {
             "title": "noches",
@@ -58,7 +58,7 @@
     },
     {
         "typeTest": "select-answer",
-        "answer": "galleta",
+        "answer": "Galleta",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/galleta.png",
         "options": [{
@@ -74,7 +74,7 @@
         {
             "title": "Galleta",
             "name": "galleta",
-            "value": "galleta"
+            "value": "Galleta"
         },
         {
             "title": "Perro",
@@ -85,7 +85,7 @@
     },
     {
         "typeTest": "select-answer",
-        "answer": "mono",
+        "answer": "Mono",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/mono.png",
         "options": [{
@@ -96,7 +96,7 @@
         {
             "title": "Mono",
             "name": "mono",
-            "value": "mono"
+            "value": "Mono"
         },
         {
             "title": "Galleta",
@@ -112,7 +112,7 @@
     },
     {
         "typeTest": "select-answer",
-        "answer": "vacuna",
+        "answer": "Vacuna",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/vacuna.png",
         "options": [{
@@ -123,7 +123,7 @@
         {
             "title": "Vacuna",
             "name": "vacuna",
-            "value": "vacuna"
+            "value": "Vacuna"
         },
         {
             "title": "Galleta",
@@ -139,7 +139,7 @@
     },{
         "typeTest": "img-select",
         "answer": "pagina-web",
-        "titleTest": "¿Cual, es pagina web?",
+        "titleTest": "¿Cuál imagen, significa \"pagina web\"?",
         "images": [{
             "name": "mono",
             "value": "mono",
@@ -162,16 +162,16 @@
         }]
     },{
         "typeTest": "words-select",
-        "answer": "buenos dias ",
+        "answer": "Buenos días ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "buenos-dias",
                 "file": "view/images/frases-comunes/buenos-dias.png"
             }],
         "wordOptions": [{
-            "title": "dias",
-            "name": "dias",
-            "value": "dias"
+            "title": "días",
+            "name": "días",
+            "value": "días"
         },
         {
             "title": "como estas",
@@ -179,9 +179,9 @@
             "value": "como-estas"
         },
         {
-            "title": "buenos",
+            "title": "Buenos",
             "name": "buenos",
-            "value": "buenos"
+            "value": "Buenos"
         },
         {
             "title": "noches",
@@ -189,23 +189,23 @@
             "value": "noches"
         },
         {
-            "title": "que tal",
+            "title": "¿Qué tal?",
             "name": "que tal",
             "value": "que-tal"
         }
         ]
     },{
         "typeTest": "words-select",
-        "answer": "buenas tardes ",
+        "answer": "Buenas tardes ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "buenas-tardes",
                 "file": "view/images/frases-comunes/buenas-tardes.png"
             }],
         "wordOptions": [{
-            "title": "buenas",
+            "title": "Buenas",
             "name": "buenas",
-            "value": "buenas"
+            "value": "Buenas"
         },
         {
             "title": "como estas",
@@ -231,13 +231,13 @@
     },
     {
         "typeTest": "select-answer",
-        "answer": "hola",
+        "answer": "Hola",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/hola.png",
         "options": [{
             "title": "Hola",
             "name": "hola",
-            "value": "hola"
+            "value": "Hola"
         },
         {
             "title": "Que tal",
@@ -258,37 +258,37 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "como llego ",
+        "answer": "¿Cómo llego? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "buenas-noches",
                 "file": "view/images/frases-comunes/como-llego.png"
             }],
         "wordOptions": [{
-            "title": "¿Comó",
+            "title": "¿Cómo",
             "name": "como",
-            "value": "como"
+            "value": "¿Cómo"
         },
         {
-            "title": "como estas",
-            "name": "como estas",
-            "value": "como-estas"
+            "title": "estas?",
+            "name": "estas",
+            "value": "estas?"
         },
         {
             "title": "llego?",
             "name": "llego",
-            "value": "llego"
+            "value": "llego?"
         },
         {
             "title": "¿Cuál",
             "name": "cual",
-            "value": "cual"
+            "value": "¿Cuál"
         }]
     },
     {
         "typeTest": "img-select",
         "answer": "cual",
-        "titleTest": "¿Como se dice (¿Cuál?)?",
+        "titleTest": "Qué imagen, significa \"Cuál\"?",
         "images": [{
             "name": "cuando",
             "value": "cuando",
@@ -313,7 +313,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "cuanto cuesta ",
+        "answer": "¿Cuánto cuesta? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "cuanto-cuesta",
@@ -327,7 +327,7 @@
         {
             "title": "¿Cuánto",
             "name": "cuanto",
-            "value": "cuanto"
+            "value": "¿Cuánto"
         },
         {
             "title": "llego?",
@@ -337,7 +337,7 @@
         {
             "title": "cuesta?",
             "name": "cuesta",
-            "value": "cuesta"
+            "value": "cuesta?"
         },
         {
             "title": "¿Quien",
@@ -347,7 +347,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "cual-es el motivo ",
+        "answer": "¿Cuál es el motivo? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "cual-es-el-motivo",
@@ -377,18 +377,18 @@
         {
             "title": "¿Cuál es",
             "name": "cual-es",
-            "value": "cual-es"
+            "value": "¿Cuál es"
         },
         {
-            "title": "motivo",
+            "title": "motivo?",
             "name": "motivo",
-            "value": "motivo"
+            "value": "motivo?"
         }]
     },
     {
         "typeTest": "img-select",
         "answer": "cuando",
-        "titleTest": "¿Comó se dice (¿Cuándo?)?",
+        "titleTest": "¿Qué imagen significa \"¿Cuándo?\" ?",
         "images": [{
             "name": "cuando",
             "value": "cuando",
@@ -413,7 +413,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "para que ",
+        "answer": "¿Para qué? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "para-que",
@@ -422,12 +422,12 @@
         "wordOptions": [{
             "title": "¿Comó",
             "name": "como",
-            "value": "como"
+            "value": "¿Comó"
         },
         {
             "title": "¿Cuánto",
             "name": "cuanto",
-            "value": "cuanto"
+            "value": "¿Cuánto"
         },
         {
             "title": "cuesta",
@@ -437,17 +437,17 @@
         {
             "title": "qué?",
             "name": "que",
-            "value": "que"
+            "value": "qué?"
         },
         {
             "title": "¿Para",
             "name": "para",
-            "value": "para"
+            "value": "¿Para"
         }]
     },
     {
         "typeTest": "select-answer",
-        "answer": "por-que",
+        "answer": "¿Por qué?",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/por-que.png",
         "options": [{
@@ -458,7 +458,7 @@
         {
             "title": "¿Por qué?",
             "name": "por-que",
-            "value": "por-que"
+            "value": "¿Por qué?"
         },
         {
             "title": "¿Qué hora es?",
@@ -474,28 +474,28 @@
     },
     {
         "typeTest": "select-answer",
-        "answer": "que-tal",
+        "answer": "¿Qué tal?",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/que-tal.png",
         "options": [{
             "title": "¿Qué tal?",
             "name": "que-tal",
-            "value": "que-tal"
+            "value": "¿Qué tal?"
         },
         {
             "title": "¿Cuánto cuesta?",
             "name": "cuanto-cuesta",
-            "value": "cuanto-cuesta"
+            "value": "¿Cuánto cuesta?"
         },
         {
             "title": "¿Qué hora es?",
             "name": "que-hora-es",
-            "value": "que-hora-es"
+            "value": "¿Qué hora es?"
         },
         {
             "title": "¿Para qué?",
             "name": "para-que",
-            "value": "para-que"
+            "value": "¿Para qué?"
         }
         ]
     },
@@ -510,7 +510,7 @@
         "wordOptions": [{
             "title": "¿Qué",
             "name": "que",
-            "value": "que"
+            "value": "¿Qué"
         },
         {
             "title": "cuando",
@@ -525,17 +525,17 @@
         {
             "title": "es?",
             "name": "es",
-            "value": "es"
+            "value": "es?"
         },
         {
             "title": "¿Para",
             "name": "para",
-            "value": "para"
+            "value": "¿Para"
         }]
     },
     {
         "typeTest": "words-select",
-        "answer": "que me cuentas ",
+        "answer": "¿Qué me cuentas? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "que-me-cuentas",
@@ -544,12 +544,12 @@
         "wordOptions": [{
             "title": "¿Qué",
             "name": "que",
-            "value": "que"
+            "value": "¿Qué"
         },
         {
             "title": "cuentas?",
             "name": "cuentas",
-            "value": "cuentas"
+            "value": "cuentas?"
         },
         {
             "title": "hora",
@@ -559,7 +559,7 @@
         {
             "title": "es?",
             "name": "es",
-            "value": "es"
+            "value": "es?"
         },
         {
             "title": "me",
