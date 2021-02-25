@@ -501,7 +501,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "que hora es ",
+        "answer": "¿Qué hora es? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "que-hora-es",
