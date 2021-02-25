@@ -15,5 +15,10 @@ $get_actions = [
         "action" => "progressExp", 
         "view" => "view/pages/test/progress.php",
         "script" => "view/scripts/progressCircle.js"
+    ],
+    [
+        "action" => "acordion", 
+        "view" => "view/pages/test/acordion.php",
+        "script" => "view/scripts/acordion.js"
     ]
 ];
