@@ -449,7 +449,7 @@
         "typeTest": "select-answer",
         "answer": "por-que",
         "titleTest": "Seleccione la respuesta correcta",
-        "fileImg": "view/images/abecedario/por-que.png",
+        "fileImg": "view/images/frases-comunes/por-que.png",
         "options": [{
             "title": "¿Qué tal?",
             "name": "que-tal",
@@ -476,7 +476,7 @@
         "typeTest": "select-answer",
         "answer": "que-tal",
         "titleTest": "Seleccione la respuesta correcta",
-        "fileImg": "view/images/abecedario/que-tal.png",
+        "fileImg": "view/images/frases-comunes/que-tal.png",
         "options": [{
             "title": "¿Qué tal?",
             "name": "que-tal",

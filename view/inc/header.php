@@ -1,7 +1,7 @@
     <header class="border-bottom">
         <div class="row w-100">
             <div class="col-md-3">
-                <a href="index.php" class="btn btn-outline-success mt-3" style="margin: 0px 18px;"><h1 class="fs-5 m-0">SIGN EC</h1></a>
+                <a href="index.php" class="" style="margin: 0px 18px;"><img src="files/covers/logo.png" class="sing-logo" alt=""></a>
             </div>
             <div class="col-md-6">
                 <nav class="navbar">
