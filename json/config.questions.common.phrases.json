@@ -55,5 +55,205 @@
             "value": "noches"
         }
         ]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "galleta",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/frases-comunes/galleta.png",
+        "options": [{
+            "title": "Vacuna",
+            "name": "vacuna",
+            "value": "vcuna"
+        },
+        {
+            "title": "Mono",
+            "name": "mono",
+            "value": "mono"
+        },
+        {
+            "title": "Galleta",
+            "name": "galleta",
+            "value": "galleta"
+        },
+        {
+            "title": "Perro",
+            "name": "perro",
+            "value": "perro"
+        }
+        ]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "mono",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/frases-comunes/mono.png",
+        "options": [{
+            "title": "Vaca",
+            "name": "vaca",
+            "value": "vaca"
+        },
+        {
+            "title": "Mono",
+            "name": "mono",
+            "value": "mono"
+        },
+        {
+            "title": "Galleta",
+            "name": "galleta",
+            "value": "galleta"
+        },
+        {
+            "title": "Perro",
+            "name": "perro",
+            "value": "perro"
+        }
+        ]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "vacuna",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/frases-comunes/vacuna.png",
+        "options": [{
+            "title": "Vaca",
+            "name": "vaca",
+            "value": "vaca"
+        },
+        {
+            "title": "Vacuna",
+            "name": "vacuna",
+            "value": "vacuna"
+        },
+        {
+            "title": "Galleta",
+            "name": "galleta",
+            "value": "galleta"
+        },
+        {
+            "title": "Perro",
+            "name": "perro",
+            "value": "perro"
+        }
+        ]
+    },{
+        "typeTest": "img-select",
+        "answer": "pagina-web",
+        "titleTest": "¿Cual, es pagina web?",
+        "images": [{
+            "name": "mono",
+            "value": "mono",
+            "file": "view/images/frases-comunes/mono.png"
+        },
+        {
+            "name": "hola",
+            "value": "hola",
+            "file": "view/images/frases-comunes/hola.png"
+        },
+        {
+            "name": "pagina-web",
+            "value": "pagina-web",
+            "file": "view/images/frases-comunes/pagina-web.png"
+        },
+        {
+            "name": "bahia",
+            "value": "bahia",
+            "file": "view/images/frases-comunes/bahia.png"
+        }]
+    },{
+        "typeTest": "words-select",
+        "answer": "buenos dias ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "buenos-dias",
+                "file": "view/images/frases-comunes/buenos-dias.png"
+            }],
+        "wordOptions": [{
+            "title": "dias",
+            "name": "dias",
+            "value": "dias"
+        },
+        {
+            "title": "como estas",
+            "name": "como estas",
+            "value": "como-estas"
+        },
+        {
+            "title": "buenos",
+            "name": "buenos",
+            "value": "buenos"
+        },
+        {
+            "title": "noches",
+            "name": "noches",
+            "value": "noches"
+        },
+        {
+            "title": "que tal",
+            "name": "que tal",
+            "value": "que-tal"
+        }
+        ]
+    },{
+        "typeTest": "words-select",
+        "answer": "buenas tardes ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "buenas-tardes",
+                "file": "view/images/frases-comunes/buenas-tardes.png"
+            }],
+        "wordOptions": [{
+            "title": "buenas",
+            "name": "buenas",
+            "value": "buenas"
+        },
+        {
+            "title": "como estas",
+            "name": "como estas",
+            "value": "como-estas"
+        },
+        {
+            "title": "buenos",
+            "name": "buenos",
+            "value": "buenos"
+        },
+        {
+            "title": "tardes",
+            "name": "tardes",
+            "value": "tardes"
+        },
+        {
+            "title": "que tal",
+            "name": "que tal",
+            "value": "que-tal"
+        }
+        ]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "hola",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/frases-comunes/hola.png",
+        "options": [{
+            "title": "Hola",
+            "name": "hola",
+            "value": "hola"
+        },
+        {
+            "title": "Que tal",
+            "name": "que tal",
+            "value": "que-tal"
+        },
+        {
+            "title": "Vacuna",
+            "name": "vacuna",
+            "value": "vacuna"
+        },
+        {
+            "title": "Chao",
+            "name": "chao",
+            "value": "chao"
+        }
+        ]
     }
 ]
