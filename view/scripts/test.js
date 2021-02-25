@@ -150,7 +150,7 @@ var onAnswer;
         divSonOnThre.setAttribute('id','word-box');
 
         for(let i =0; i< testThree.wordOptions.length; i++){
-            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}">${testThree.wordOptions[i].name}</button>`;
+            let buttonWord = `<button class="btn btn-colors" value="${testThree.wordOptions[i].value}">${testThree.wordOptions[i].title}</button>`;
             divSonOnThre.innerHTML += buttonWord;
         }
 
