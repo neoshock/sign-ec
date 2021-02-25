@@ -28,7 +28,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "buenas noches",
+        "answer": "buenas noches ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "buenas-noches",
@@ -55,5 +55,316 @@
             "value": "noches"
         }
         ]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "como llego ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "buenas-noches",
+                "file": "view/images/frases-comunes/como-llego.png"
+            }],
+        "wordOptions": [{
+            "title": "¿Comó",
+            "name": "como",
+            "value": "como"
+        },
+        {
+            "title": "como estas",
+            "name": "como estas",
+            "value": "como-estas"
+        },
+        {
+            "title": "llego?",
+            "name": "llego",
+            "value": "llego"
+        },
+        {
+            "title": "¿Cuál",
+            "name": "cual",
+            "value": "cual"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "cual",
+        "titleTest": "¿Como se dice (¿Cuál?)?",
+        "images": [{
+            "name": "cuando",
+            "value": "cuando",
+            "file": "view/images/frases-comunes/cuando.png"
+        },
+        {
+            "name": "para-que",
+            "value": "para-que",
+            "file": "view/images/frases-comunes/para-que.png"
+        },
+        {
+            "name": "cual",
+            "value": "cual",
+            "file": "view/images/frases-comunes/cual.png"
+        },
+        {
+            "name": "que-tal",
+            "value": "que-tal",
+            "file": "view/images/frases-comunes/que-tal.png"
+        }
+        ]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "cuanto cuesta ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "cuanto-cuesta",
+                "file": "view/images/frases-comunes/cuanto-cuesta.png"
+            }],
+        "wordOptions": [{
+            "title": "¿Comó",
+            "name": "como",
+            "value": "como"
+        },
+        {
+            "title": "¿Cuánto",
+            "name": "cuanto",
+            "value": "cuanto"
+        },
+        {
+            "title": "llego?",
+            "name": "llego",
+            "value": "llego"
+        },
+        {
+            "title": "cuesta?",
+            "name": "cuesta",
+            "value": "cuesta"
+        },
+        {
+            "title": "¿Quien",
+            "name": "quien",
+            "value": "quien"
+        }]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "cual-es el motivo ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "cual-es-el-motivo",
+                "file": "view/images/frases-comunes/cual-es-el-motivo.png"
+            }],
+        "wordOptions": [
+        {
+            "title": "¿Cuánto",
+            "name": "cuanto",
+            "value": "cuanto"
+        },
+        {
+            "title": "llego?",
+            "name": "llego",
+            "value": "llego"
+        },
+        {
+            "title": "¿Comó",
+            "name": "como",
+            "value": "como"
+        },
+        {
+            "title": "el",
+            "name": "el",
+            "value": "el"
+        },
+        {
+            "title": "¿Cuál es",
+            "name": "cual-es",
+            "value": "cual-es"
+        },
+        {
+            "title": "motivo",
+            "name": "motivo",
+            "value": "motivo"
+        }]
+    },
+    {
+        "typeTest": "img-select",
+        "answer": "cuando",
+        "titleTest": "¿Comó se dice (¿Cuándo?)?",
+        "images": [{
+            "name": "cuando",
+            "value": "cuando",
+            "file": "view/images/frases-comunes/cuando.png"
+        },
+        {
+            "name": "por-que",
+            "value": "por-que",
+            "file": "view/images/frases-comunes/por-que.png"
+        },
+        {
+            "name": "para-que",
+            "value": "para-que",
+            "file": "view/images/frases-comunes/para-que.png"
+        },
+        {
+            "name": "que-tal",
+            "value": "que-tal",
+            "file": "view/images/frases-comunes/que-tal.png"
+        }
+        ]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "para que ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "para-que",
+                "file": "view/images/frases-comunes/para-que.png"
+            }],
+        "wordOptions": [{
+            "title": "¿Comó",
+            "name": "como",
+            "value": "como"
+        },
+        {
+            "title": "¿Cuánto",
+            "name": "cuanto",
+            "value": "cuanto"
+        },
+        {
+            "title": "cuesta",
+            "name": "cuesta",
+            "value": "cuesta"
+        },
+        {
+            "title": "qué?",
+            "name": "que",
+            "value": "que"
+        },
+        {
+            "title": "¿Para",
+            "name": "para",
+            "value": "para"
+        }]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "por-que",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/abecedario/por-que.png",
+        "options": [{
+            "title": "¿Qué tal?",
+            "name": "que-tal",
+            "value": "que-tal"
+        },
+        {
+            "title": "¿Por qué?",
+            "name": "por-que",
+            "value": "por-que"
+        },
+        {
+            "title": "¿Qué hora es?",
+            "name": "que-hora-es",
+            "value": "que-hora-es"
+        },
+        {
+            "title": "¿Qué me cuentas?",
+            "name": "que-me-cuentas",
+            "value": "que-me-cuentas"
+        }
+        ]
+    },
+    {
+        "typeTest": "select-answer",
+        "answer": "que-tal",
+        "titleTest": "Seleccione la respuesta correcta",
+        "fileImg": "view/images/abecedario/que-tal.png",
+        "options": [{
+            "title": "¿Qué tal?",
+            "name": "que-tal",
+            "value": "que-tal"
+        },
+        {
+            "title": "¿Cuánto cuesta?",
+            "name": "cuanto-cuesta",
+            "value": "cuanto-cuesta"
+        },
+        {
+            "title": "¿Qué hora es?",
+            "name": "que-hora-es",
+            "value": "que-hora-es"
+        },
+        {
+            "title": "¿Para qué?",
+            "name": "para-que",
+            "value": "para-que"
+        }
+        ]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "que hora es ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "que-hora-es",
+                "file": "view/images/frases-comunes/que-hora-es.png"
+            }],
+        "wordOptions": [{
+            "title": "¿Qué",
+            "name": "que",
+            "value": "que"
+        },
+        {
+            "title": "cuando",
+            "name": "cuando",
+            "value": "cuando"
+        },
+        {
+            "title": "hora",
+            "name": "hora",
+            "value": "hora"
+        },
+        {
+            "title": "es?",
+            "name": "es",
+            "value": "es"
+        },
+        {
+            "title": "¿Para",
+            "name": "para",
+            "value": "para"
+        }]
+    },
+    {
+        "typeTest": "words-select",
+        "answer": "que me cuentas ",
+        "titleTest": "Arme la frase correcta",
+        "fileImgs": [{
+                "name": "que-me-cuentas",
+                "file": "view/images/frases-comunes/que-me-cuentas.png"
+            }],
+        "wordOptions": [{
+            "title": "¿Qué",
+            "name": "que",
+            "value": "que"
+        },
+        {
+            "title": "cuentas?",
+            "name": "cuentas",
+            "value": "cuentas"
+        },
+        {
+            "title": "hora",
+            "name": "hora",
+            "value": "hora"
+        },
+        {
+            "title": "es?",
+            "name": "es",
+            "value": "es"
+        },
+        {
+            "title": "me",
+            "name": "me",
+            "value": "me"
+        }]
     }
 ]
