@@ -48,7 +48,6 @@ content.html(buildImageFlipBoxes("json/config.sections.json")).ready(function(){
     if($('.box-flip').length > 0) {
         
         $('.box-flip').each(function() {
-            console.log(this)
             _height = $('.box1', this).outerHeight();
             
             $(this).css({"min-height":_height+"px"});
@@ -68,7 +67,6 @@ content.html(buildImageFlipBoxes("json/config.sections.json")).ready(function(){
         
         // cargar el nuevo contenido
         $.getScript("view/js/Accordion.js").done(function(){
-            console.log("cargado")
             
             // obtener el archi json de config
             $.getJSON(json, function(data){
@@ -80,6 +78,7 @@ content.html(buildImageFlipBoxes("json/config.sections.json")).ready(function(){
                         title: "a",
                         video: ""
                     }));
+                    functionAccordion();
                 }
             }).done(function(){
                 $("button.mymodal").click(function(){

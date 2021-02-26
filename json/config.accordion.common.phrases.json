@@ -1,40 +1,5 @@
 [
     {
-        "title": "Palabras comunes",
-        "content": [
-            {
-                "word": "Bahía",
-                "image": "view/images/frases-comunes/bahia.png",
-                "video": "https://www.youtube.com/embed/TiRmxsXsz74",
-                "description": "La mano se desplaza de afuera hacia adentro hasta el borde interno de la mano contraria y regresa"
-            },
-            {
-                "word": "Galleta",
-                "image": "view/images/frases-comunes/galleta.png",
-                "video": "https://www.youtube.com/embed/TGhtJKkp9rE",
-                "description": "La mano se acerca lentamente a la boca. Los dientes chasquean"
-            },
-            {
-                "word": "Mono",
-                "image": "view/images/frases-comunes/mono.png",
-                "video": "https://www.youtube.com/embed/4QvM-Tlngis",
-                "description": "Las manos rascan la frente y el abdomen. La lengua se pone atrás del mentón"
-            },
-            {
-                "word": "Página web",
-                "image": "view/images/frases-comunes/pagina-web.png",
-                "video": "https://www.youtube.com/embed/7tcsBm-RoDo",
-                "description": "La mano se desplaza en curva de adentro hacía afuera tres veces"
-            },
-            {
-                "word": "Vacuna",
-                "image": "view/images/frases-comunes/vacuna.png",
-                "video": "https://www.youtube.com/embed/EIVsHByjbC4",
-                "description": "La mano toca el brazo contrario de la mano"
-            }
-        ]
-    },
-    {
         "title": "Saludos",
         "content": [
             {
@@ -67,7 +32,7 @@
         "title": "Preguntas comunes",
         "content": [
             {
-                "word": "¿Comó llego?",
+                "word": "¿Cómo llego?",
                 "image": "view/images/frases-comunes/como-llego.png",
                 "video": "https://www.youtube.com/embed/sO0s-MBsfSE",
                 "description": "La mano se dezplaza hacia adelante en forma ondulada"
@@ -91,7 +56,7 @@
                 "description": "El dedo índice dibuja un círculo de adelante hacia atrás sobre el índice de la mano contraría. La boca está en forma de beso abierto"
             },
             {
-                "word": "¿Cuánto cuenta?",
+                "word": "¿Cuánto cuesta?",
                 "image": "view/images/frases-comunes/cuanto-cuesta.png",
                 "video": "https://www.youtube.com/embed/qPAhpZIgVwI",
                 "description": "Los dedos se frotan. La boca está cerrada con los labios hacía afuera"
@@ -125,6 +90,41 @@
                 "image": "view/images/frases-comunes/que-me-cuentas.png",
                 "video": "https://www.youtube.com/embed/Wt1qJdCRBfo",
                 "description": "La mano toca el mentón dos veces. Se ven los dientes juntos"
+            }
+        ]
+    },
+    {
+        "title": "Palabras comunes",
+        "content": [
+            {
+                "word": "Bahía",
+                "image": "view/images/frases-comunes/bahia.png",
+                "video": "https://www.youtube.com/embed/TiRmxsXsz74",
+                "description": "La mano se desplaza de afuera hacia adentro hasta el borde interno de la mano contraria y regresa"
+            },
+            {
+                "word": "Galleta",
+                "image": "view/images/frases-comunes/galleta.png",
+                "video": "https://www.youtube.com/embed/TGhtJKkp9rE",
+                "description": "La mano se acerca lentamente a la boca. Los dientes chasquean"
+            },
+            {
+                "word": "Mono",
+                "image": "view/images/frases-comunes/mono.png",
+                "video": "https://www.youtube.com/embed/4QvM-Tlngis",
+                "description": "Las manos rascan la frente y el abdomen. La lengua se pone atrás del mentón"
+            },
+            {
+                "word": "Página web",
+                "image": "view/images/frases-comunes/pagina-web.png",
+                "video": "https://www.youtube.com/embed/7tcsBm-RoDo",
+                "description": "La mano se desplaza en curva de adentro hacía afuera tres veces"
+            },
+            {
+                "word": "Vacuna",
+                "image": "view/images/frases-comunes/vacuna.png",
+                "video": "https://www.youtube.com/embed/EIVsHByjbC4",
+                "description": "La mano toca el brazo contrario de la mano"
             }
         ]
     }

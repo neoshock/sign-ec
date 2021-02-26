@@ -1,9 +1,9 @@
 function buildAccordion(config)
 {
     var html = "";
-    html += '<div class="accordion accordion-flush" id="accordionFlushExample">';
+    html += '<div class="accordion">';
     $.each(config, function(i, o){
-        html += '<div class="accordion-item">';
+        /*html += '<div class="accordion-item">';
         html += '  <h2 class="accordion-header" id="flush-heading'+i+'">';
         html += '    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse'+i+'" aria-expanded="false" aria-controls="flush-collapse'+i+'">';
         html += '      '+o.title+'';
@@ -12,7 +12,15 @@ function buildAccordion(config)
         html += '  <div id="flush-collapse'+i+'" class="accordion-collapse collapse" aria-labelledby="flush-heading'+i+'" data-bs-parent="#accordionFlushExample">';
         html += '    <div class="accordion-body">'+ buildPersonalizedCard(o.content) +'</div>';
         html += '  </div>';
-        html += '</div>';
+        html += '</div>';*/
+        html+='<div class="accordion-item">';
+        html+='	<div class="accordion-title">';
+        html+='  		'+o.title+' <i class="fa fa-chevron-down"></i>';
+        html+='	</div>';
+        html+='	<div class="accordion-content accordion-hide">';
+        html+='  		'+ buildPersonalizedCard(o.content) +'';
+        html+='	</div>';
+        html+='</div>';
     });
     html += '</div>';
     return html;
@@ -44,3 +52,25 @@ function buildPersonalizedCard(config)
     return html;
 }
 
+function functionAccordion()
+{
+    $(".accordion-title").click(function(){
+        var item = $(this).parent();
+        var item_content = item.children("div.accordion-content");
+        if (item_content.hasClass("accordion-show")) {
+            item_content.siblings().removeClass("accordion-active")
+                .children("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+
+            item_content.removeClass("accordion-show").addClass("accordion-hide");
+        } else if (item_content.hasClass("accordion-hide")) {
+            item_content.siblings().addClass("accordion-active")
+                .children("i").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+            item.siblings().children("div.accordion-title")
+                .children("i").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+
+            item_content.removeClass("accordion-hide").addClass("accordion-show");
+            item.siblings().children("div.accordion-content").removeClass("accordion-show").addClass("accordion-hide");
+            item.siblings().children("div.accordion-title").removeClass("accordion-active");
+        }
+    });
+}

@@ -12,6 +12,7 @@ function callPoints(){
         points.html(0 + ' exp');
     }
 }
+
 $(document).ready(function()
 {
     callPoints();

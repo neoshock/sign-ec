@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="view/css/main.css">
     <link rel="stylesheet" href="view/css/test.css">
     <link rel="stylesheet" href="view/css/progress.css">
+    <link rel="stylesheet" href="view/css/accordion.css">
     <title>SIGN EC</title>
 </head>
 <body>

@@ -1,0 +1,31 @@
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-title {
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 16px 20px;
+    cursor: pointer;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+}
+
+.accordion-content {
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 16px 20px;
+}
+
+.accordion-hide {
+    display: none;
+}
+
+.accordion-show {
+    display: block;
+}
+
+.accordion-active {
+    color: #0c63e4;
+    background-color: #e7f1ff;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}

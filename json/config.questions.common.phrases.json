@@ -1,7 +1,7 @@
 [
     {
         "typeTest": "select-answer",
-        "answer": "bahia",
+        "answer": "Bahía",
         "titleTest": "Seleccione la respuesta correcta",
         "fileImg": "view/images/frases-comunes/bahia.png",
         "options": [{
@@ -22,7 +22,7 @@
         {
             "title": "Bahía",
             "name": "bahia",
-            "value": "bahia"
+            "value": "Bahía"
         }
         ]
     },
@@ -139,7 +139,7 @@
     },{
         "typeTest": "img-select",
         "answer": "pagina-web",
-        "titleTest": "¿Cual, es pagina web?",
+        "titleTest": "¿Cuál imagen significa \"página web\"?",
         "images": [{
             "name": "mono",
             "value": "mono",
@@ -413,7 +413,7 @@
     },
     {
         "typeTest": "words-select",
-        "answer": "para que ",
+        "answer": "¿Para qué? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "para-que",
@@ -422,12 +422,12 @@
         "wordOptions": [{
             "title": "¿Comó",
             "name": "como",
-            "value": "como"
+            "value": "¿Comó"
         },
         {
             "title": "¿Cuánto",
             "name": "cuanto",
-            "value": "cuanto"
+            "value": "¿Cuánto"
         },
         {
             "title": "cuesta",
@@ -437,19 +437,19 @@
         {
             "title": "qué?",
             "name": "que",
-            "value": "que"
+            "value": "qué?"
         },
         {
             "title": "¿Para",
             "name": "para",
-            "value": "para"
+            "value": "¿Para"
         }]
     },
     {
         "typeTest": "select-answer",
-        "answer": "por-que",
+        "answer": "¿Por qué?",
         "titleTest": "Seleccione la respuesta correcta",
-        "fileImg": "view/images/abecedario/por-que.png",
+        "fileImg": "view/images/frases-comunes/por-que.png",
         "options": [{
             "title": "¿Qué tal?",
             "name": "que-tal",
@@ -458,7 +458,7 @@
         {
             "title": "¿Por qué?",
             "name": "por-que",
-            "value": "por-que"
+            "value": "¿Por qué?"
         },
         {
             "title": "¿Qué hora es?",
@@ -474,28 +474,28 @@
     },
     {
         "typeTest": "select-answer",
-        "answer": "que-tal",
+        "answer": "¿Qué tal?",
         "titleTest": "Seleccione la respuesta correcta",
-        "fileImg": "view/images/abecedario/que-tal.png",
+        "fileImg": "view/images/frases-comunes/que-tal.png",
         "options": [{
             "title": "¿Qué tal?",
             "name": "que-tal",
-            "value": "que-tal"
+            "value": "¿Qué tal?"
         },
         {
             "title": "¿Cuánto cuesta?",
             "name": "cuanto-cuesta",
-            "value": "cuanto-cuesta"
+            "value": "¿Cuánto cuesta?"
         },
         {
             "title": "¿Qué hora es?",
             "name": "que-hora-es",
-            "value": "que-hora-es"
+            "value": "¿Qué hora es?"
         },
         {
             "title": "¿Para qué?",
             "name": "para-que",
-            "value": "para-que"
+            "value": "¿Para qué?"
         }
         ]
     },
@@ -510,7 +510,7 @@
         "wordOptions": [{
             "title": "¿Qué",
             "name": "que",
-            "value": "que"
+            "value": "¿Qué"
         },
         {
             "title": "cuando",
@@ -525,17 +525,17 @@
         {
             "title": "es?",
             "name": "es",
-            "value": "es"
+            "value": "es?"
         },
         {
             "title": "¿Para",
             "name": "para",
-            "value": "para"
+            "value": "¿Para"
         }]
     },
     {
         "typeTest": "words-select",
-        "answer": "que me cuentas ",
+        "answer": "¿Qué me cuentas? ",
         "titleTest": "Arme la frase correcta",
         "fileImgs": [{
                 "name": "que-me-cuentas",
@@ -544,12 +544,12 @@
         "wordOptions": [{
             "title": "¿Qué",
             "name": "que",
-            "value": "que"
+            "value": "¿Qué"
         },
         {
             "title": "cuentas?",
             "name": "cuentas",
-            "value": "cuentas"
+            "value": "cuentas?"
         },
         {
             "title": "hora",
@@ -559,7 +559,7 @@
         {
             "title": "es?",
             "name": "es",
-            "value": "es"
+            "value": "es?"
         },
         {
             "title": "me",
