@@ -61,8 +61,11 @@ content.html(buildImageFlipBoxes("json/config.sections.json")).ready(function(){
         });
     }
 
-    $("buttom.btn-study").click(function(){
-        
+    $("buttom.btn-study").click(function(e){
+
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
         var json = $(this).attr("data-study");
         
         // cargar el nuevo contenido

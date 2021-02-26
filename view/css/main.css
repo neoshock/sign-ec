@@ -1,0 +1,19 @@
+.sing-logo {
+    width: 60%;
+    margin-top: 6px;
+}
+
+.acordionHeader {
+    cursor: pointer;
+    transition: all 0.1s;
+    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.acordionHeader:hover {
+    border: 2px solid rgb(20, 204, 228);
+}
+
+.acordion-active {
+    border: 2px solid rgb(116, 224, 238);
+}
